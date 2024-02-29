@@ -5,56 +5,31 @@ using UnityEngine;
 
 public class MachineClass : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool hasWorker;
+    public bool isCrafting;
+    public Inventory machineInventory;
+    [SerializeField] private int suppliesNeeded;
+    [SerializeField] private int outputAmount;
 
-    // Update is called once per frame
-    void Update()
+    
+    public void TryCraft()
     {
-        
-    }
-}
-
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
-
-[Serializable]
-public class Inventory
-{
-    public List<int> itemIds = new();
-    ResourceManager resourceManager;
-
-    public Inventory()
-    {
-        resourceManager = ResourceManager.Instance;
-    }
-    public void AddItem(int id)
-    {
-        itemIds.Add(id);
-    }
-    public void InsertItemAtTop(int id)
-    {
-        itemIds.Insert(0, id);
-    }
-    public void RemoveItem(int id)
-    {
-        if (itemIds.Count == 1)
+        foreach(var item in machineInventory.items)
         {
-            itemIds.Clear();
-        }
-        else
-        {
-            itemIds.Remove(id);
+            if(item.itemID == 0)
+            {
+                machineInventory.RemoveItem(item.itemID, suppliesNeeded);
+                CreateProduct();
+            }
         }
     }
-    public ResourceData GetItemData(int id)
+    public void UpgradeMachine()
     {
-        return resourceManager.resources[itemIds[id]];
+
+    }
+    private void CreateProduct()
+    {
+        //play animation
+        machineInventory.AddItem(1, outputAmount);
     }
 }
