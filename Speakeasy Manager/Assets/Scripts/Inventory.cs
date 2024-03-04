@@ -13,7 +13,7 @@ public class Inventory
 
     public Inventory()
     {
-        resourceManager = ResourceManager.Instance;
+        resourceManager = ResourceManager.instance;
     }
     public void AddItem(int id, int amount)
     {
