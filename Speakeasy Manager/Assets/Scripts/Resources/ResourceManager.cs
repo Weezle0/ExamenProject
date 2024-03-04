@@ -8,6 +8,8 @@ public class ResourceManager : MonoBehaviour
     public List<ResourceData> resources;
     private void Awake()
     {
+        // if there is no instance of this object set it to this object
+        // else destroy this object
         if (instance != null && instance != this)
         {
             Destroy(this);

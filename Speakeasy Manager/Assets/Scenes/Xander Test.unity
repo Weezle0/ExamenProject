@@ -184,8 +184,9 @@ GameObject:
   - component: {fileID: 1397221118}
   - component: {fileID: 1397221122}
   - component: {fileID: 1397221123}
+  - component: {fileID: 1397221124}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Worker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -315,6 +316,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   workerInventory:
     items: []
+  currentMachine: {fileID: 0}
+  isWorking: 0
+--- !u!54 &1397221124
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397221117}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1420304096
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420304096}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -359,10 +389,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bfe662190a7da341b7ced849fbee688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  temp: {fileID: 0}
   workers:
   - {fileID: 1397221123}
-  machines: []
+  machines:
+  - {fileID: 4256385432073462719}
 --- !u!1 &1900343586
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,11 +786,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoonShine Distillery
       objectReference: {fileID: 0}
+    - target: {fileID: 7746295707420707875, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
+      propertyPath: hasWorker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746295707420707875, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
+      propertyPath: machineInventory.items.Array.data[0].amount
+      value: 260
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746295707420707875, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
+      propertyPath: machineInventory.items.Array.data[0].itemID
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
+--- !u!114 &4256385432073462719 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7746295707420707875, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
+  m_PrefabInstance: {fileID: 4256385432073462715}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2462e7244a178745a4e11a3c8192db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

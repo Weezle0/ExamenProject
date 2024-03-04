@@ -9,6 +9,7 @@ public class Resource : MonoBehaviour
 
     private void Awake()
     {
+        // set resourceObject to the gameObject
         resourceObject = gameObject;
     }
 }

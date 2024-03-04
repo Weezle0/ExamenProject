@@ -9,6 +9,7 @@ public class ResourceData : ScriptableObject
     [SerializeField] private int id;
     public int Id
     {
+        // return the itemID of the resource
         get { return id; }
     }
 }

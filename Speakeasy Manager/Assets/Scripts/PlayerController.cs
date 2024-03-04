@@ -16,11 +16,11 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        // Zoom In/Out
+        // zoom in/out
         float zoomDelta = Input.GetAxis("Zoom") * zoomSpeed * Time.deltaTime;
         ZoomCamera(zoomDelta);
 
-        // Move Left/Right and Up/Down
+        // move left/right and up/down
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         MoveCamera(horizontalInput, verticalInput);
@@ -29,17 +29,17 @@ public class PlayerController : MonoBehaviour
     void ZoomCamera(float delta)
     {
 
-        // Calculate new zoom level
+        // calculate new zoom level
         float newZoom = mainCamera.fieldOfView - delta;
         newZoom = Mathf.Clamp(newZoom, minZoom, maxZoom);
 
-        // Apply the new zoom
+        // apply the new zoom
         mainCamera.fieldOfView = newZoom;
     }
 
     void MoveCamera(float horizontalInput, float verticalInput)
     {
-        // Move the camera horizontally and vertically
+        // move the camera horizontally and vertically
         Vector3 newPosition = transform.position;
         newPosition.x += horizontalInput * moveSpeed * Time.deltaTime;
         newPosition.z += verticalInput * moveSpeed * Time.deltaTime;
