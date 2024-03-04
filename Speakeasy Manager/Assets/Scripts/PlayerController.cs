@@ -8,7 +8,12 @@ public class PlayerController : MonoBehaviour
     public float zoomSpeed = 5f;
     public float minZoom = 5f;
     public float maxZoom = 20f;
+    Camera mainCamera;
 
+    public void Start()
+    {
+        mainCamera = Camera.main;
+    }
     void Update()
     {
         // Zoom In/Out
@@ -23,7 +28,6 @@ public class PlayerController : MonoBehaviour
 
     void ZoomCamera(float delta)
     {
-        Camera mainCamera = Camera.main;
 
         // Calculate new zoom level
         float newZoom = mainCamera.fieldOfView - delta;
@@ -40,9 +44,6 @@ public class PlayerController : MonoBehaviour
         newPosition.x += horizontalInput * moveSpeed * Time.deltaTime;
         newPosition.z += verticalInput * moveSpeed * Time.deltaTime;
 
-        // You can set limits on the movement if needed
-
-        // Apply the new position
         transform.position = newPosition;
     }
 }
