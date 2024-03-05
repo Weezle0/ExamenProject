@@ -49,9 +49,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 48e37a629e7620540b3151f1862f466c, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 48e37a629e7620540b3151f1862f466c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4083abd10a11f9a42a89adc07c15081b, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 48e37a629e7620540b3151f1862f466c, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 01a8d7d1e6e92604a9b802b4605f9c47, type: 2}
     - target: {fileID: 919132149155446097, guid: 48e37a629e7620540b3151f1862f466c, type: 3}
       propertyPath: m_Name
       value: Wijnfles
