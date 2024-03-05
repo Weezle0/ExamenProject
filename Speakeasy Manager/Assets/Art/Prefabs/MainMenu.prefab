@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2172207715603613531}
-  - component: {fileID: 2148751729143488187}
   m_Layer: 5
   m_Name: Buttons
   m_TagString: Untagged
@@ -39,18 +38,6 @@ RectTransform:
   m_AnchoredPosition: {x: 360, y: 277.8}
   m_SizeDelta: {x: 237.25049, y: 224.35999}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2148751729143488187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1505401211781334426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d40220c09bec7884498cd0f1bb6f77fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1732358875327198380
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,6 +117,7 @@ GameObject:
   - component: {fileID: 3129313658565118661}
   - component: {fileID: 7988077761919903102}
   - component: {fileID: 1888667289370578437}
+  - component: {fileID: 2694960478061649570}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -198,6 +186,21 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Start \nGame"
+--- !u!114 &2694960478061649570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2896653905379269863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &3068208042773275594
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,6 +287,7 @@ GameObject:
   - component: {fileID: 6409325236214155221}
   - component: {fileID: 8332900979172486901}
   - component: {fileID: 3987680807016217792}
+  - component: {fileID: 663436638140971245}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -352,6 +356,21 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Settings
+--- !u!114 &663436638140971245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3179456615930306237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &5640766486130008776
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +486,7 @@ GameObject:
   - component: {fileID: 3995993673695564324}
   - component: {fileID: 2464324478418250477}
   - component: {fileID: 7562931997267269020}
+  - component: {fileID: 7912102840220310857}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -535,6 +555,21 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Quit \nGame"
+--- !u!114 &7912102840220310857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5750837012348233152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &6082801570969069965
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,7 +724,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2148751729143488187}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
         m_MethodName: ChangeScene
         m_Mode: 3
@@ -821,7 +856,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 890786534619882327}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6082801570969069965}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &8691507576200148734
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,7 +1002,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2148751729143488187}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
         m_MethodName: QuitButton
         m_Mode: 1
