@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &595574656059733002
+--- !u!1001 &3284529597806188339
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,19 +10,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 85e4d5f4c6c8a91429b1592c877aa251, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85e4d5f4c6c8a91429b1592c877aa251, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.009185061
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85e4d5f4c6c8a91429b1592c877aa251, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -2.4307082
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85e4d5f4c6c8a91429b1592c877aa251, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85e4d5f4c6c8a91429b1592c877aa251, type: 3}
       propertyPath: m_LocalRotation.x
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85e4d5f4c6c8a91429b1592c877aa251, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85e4d5f4c6c8a91429b1592c877aa251, type: 3}
       propertyPath: m_LocalRotation.z
@@ -42,7 +42,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85e4d5f4c6c8a91429b1592c877aa251, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85e4d5f4c6c8a91429b1592c877aa251, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: cae600396e27fba47aa1ac07bda6ea90, type: 2}
     - target: {fileID: 919132149155446097, guid: 85e4d5f4c6c8a91429b1592c877aa251, type: 3}
       propertyPath: m_Name
-      value: BankLevel1
+      value: Bank (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
