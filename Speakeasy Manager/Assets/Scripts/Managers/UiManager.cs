@@ -25,16 +25,16 @@ public class UiManager : MonoBehaviour
         int currentResolutionIndex = 0;
         for (int i = 0; i < resolutions.Length; i++)
         {
-            string option = resolutions[i].width + "x" + resolutions[i].height;
-            options.Add(option);
+            string option = resolutions[i].width + "x" + resolutions[i].height;//here we take the width and height values out of the array and put them in the option string 
+            options.Add(option);//Here we add the option in the list 
 
-            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
+            if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height) //Here we check if the selected resolution is the same as the current resolution and then fill in the int so we can display in the dropdown which one is selected as default
             {
                 currentResolutionIndex = i;
-            } 
-        } 
-        resolutionDropdown.AddOptions(options);
-        resolutionDropdown.value = currentResolutionIndex;
+            }
+        }
+        resolutionDropdown.AddOptions(options); //Here we fill the resolution drop down list with the options list
+        resolutionDropdown.value = currentResolutionIndex; 
         resolutionDropdown.RefreshShownValue();
     }
     public void ChangeScene(int sceneNumber) //This ensures that the correct scene is loaded
@@ -60,7 +60,7 @@ public class UiManager : MonoBehaviour
         QualitySettings.SetQualityLevel(qualityIndex); 
     }
 
-    public void SetResolution(int resolutionIndex)
+    public void SetResolution(int resolutionIndex) //Here we change the resolution if we selected an diffrent resolution in the dropdown
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width , resolution.height,true);

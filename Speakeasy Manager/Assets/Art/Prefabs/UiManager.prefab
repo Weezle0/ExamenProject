@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5073927380749477581}
-  - component: {fileID: 7644543201173534860}
+  - component: {fileID: 3812144396854259537}
   m_Layer: 0
   m_Name: UiManager
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7644543201173534860
+--- !u!114 &3812144396854259537
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,8 +41,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 806429040070946170}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d40220c09bec7884498cd0f1bb6f77fa, type: 3}
+  m_Script: {fileID: 11500000, guid: c4d401ed5521c03449db9bf0a906632a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sfxAudiomixer: {fileID: 24100000, guid: 9bf4d6557b515af4f85532e494a4cb8b, type: 2}
   musicAudiomixer: {fileID: 24100000, guid: ae89da4af04ae0448866c26164369b93, type: 2}
+  resolutionDropdown: {fileID: 0}

@@ -9,6 +9,7 @@ public class EconomyManager : MonoBehaviour
 
     [SerializeField] private float money;
     [SerializeField] private Text moneyText;
+    [SerializeField] private Text moneyChangeText;
     
     
 
@@ -34,10 +35,12 @@ public class EconomyManager : MonoBehaviour
     {
         money += amount;
         moneyText.text = money.ToString();
+        moneyChangeText.text = "+" + amount.ToString("F2");
     }
     public void DecreaseMoney(float _amount)
     {
         money -= _amount;
         moneyText.text = money.ToString();
+        moneyChangeText.text = "-" + _amount.ToString("F2");
     }
 }
