@@ -40,10 +40,10 @@ public class Inventory
         }
         
     }
-    public void InsertItemAtTop(ItemSlot itemToInsert)
+    public void TransferItems(Inventory recipient, Inventory sender, int itemType, int amount)
     {
-        // insert the item at the top of the inventory
-        items.Insert(0, itemToInsert);
+        recipient.RemoveItem(itemType, amount);
+        sender.AddItem(itemType, amount);
     }
     public void RemoveItem(int id, int amount)
     {

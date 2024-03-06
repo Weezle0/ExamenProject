@@ -43,7 +43,7 @@ public class WorkerManager : MonoBehaviour
     }
     public MachineClass FindIdleMachine()
     {
-        //check each machine to find if they are idle
+        // check each machine to find if they are idle
         foreach (MachineClass machine in machines)
         {
             if (!machine.hasWorker)

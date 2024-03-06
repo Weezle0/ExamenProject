@@ -29,7 +29,12 @@ public class WorkerScript : MonoBehaviour
         if (currentMachine != null && !currentMachine.isCrafting)
         {
             isWorking = true;
-            currentMachine.TryCraft();
+            bool canCraft = currentMachine.TryCraft();
+            if (!canCraft)
+            {
+                IsWorking = false;
+                StoreMoonShine();
+            }
         }
         // else stop working
         if (currentMachine == null && isWorking)
@@ -53,12 +58,24 @@ public class WorkerScript : MonoBehaviour
         return null;
     }
 
+    public void StoreMoonShine()
+    {
+        foreach (var item in workerInventory.items)
+        {
+            if (item.itemID == 1)
+            {
+                currentMachine.machineInventory.TransferItems(workerInventory, currentMachine.machineInventory, item.itemID, 5);
+            }
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(this.name + " found a machine");
-        if (other.transform.GetComponent<MachineClass>())
+        if (other.transform.GetComponent<MachineClass>() && currentMachine == null)
         {
             currentMachine = other.transform.GetComponent<MachineClass>();
+            currentMachine.hasWorker = true;
         }
     }
 }

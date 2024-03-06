@@ -34,7 +34,7 @@ public class MachineClass : MonoBehaviour
             test = false;
         }
     }
-    public void TryCraft()
+    public bool TryCraft()
     {
         // check if the items in the inventory are of the supply type
         List<ResourceData> requiredResources = resourceNeeded.ToList();
@@ -59,7 +59,9 @@ public class MachineClass : MonoBehaviour
         {
             isCrafting = true;
             StartCoroutine(CreateProduct());
+            return true;
         }
+        return false;
     }
     public void UpgradeMachine()
     {
@@ -73,16 +75,5 @@ public class MachineClass : MonoBehaviour
         isCrafting = false;
         StopCoroutine(CreateProduct());
 
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        // if a worker enters the working space set the worker variable to true
-        if (other.GetComponent<WorkerScript>())
-        {
-            if (other.GetComponent<WorkerScript>().GetCurrentMachine() == this)
-            {
-                hasWorker = true;
-            }
-        }
     }
 }
