@@ -79,5 +79,121 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -954010047093929397, guid: 8d05f1a65a783c6449f9774d18c8c9fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3773430119352086133}
+    - targetCorrespondingSourceObject: {fileID: -954010047093929397, guid: 8d05f1a65a783c6449f9774d18c8c9fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4523375363596106011}
+    - targetCorrespondingSourceObject: {fileID: -954010047093929397, guid: 8d05f1a65a783c6449f9774d18c8c9fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3131655009965427340}
+    - targetCorrespondingSourceObject: {fileID: 563778600062408590, guid: 8d05f1a65a783c6449f9774d18c8c9fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2870659827489024990}
   m_SourcePrefab: {fileID: 100100000, guid: 8d05f1a65a783c6449f9774d18c8c9fa, type: 3}
+--- !u!1 &566362159979204424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -954010047093929397, guid: 8d05f1a65a783c6449f9774d18c8c9fa, type: 3}
+  m_PrefabInstance: {fileID: 8439380150870115587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &3773430119352086133
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566362159979204424}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9815472, y: 1.939784, z: 0.18758869}
+  m_Center: {x: -0.008802593, y: 0.9698932, z: -3.0690272}
+--- !u!65 &4523375363596106011
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566362159979204424}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.45464516, y: 1.939784, z: 0.18758869}
+  m_Center: {x: -2.2830834, y: 0.9698932, z: -3.0690272}
+--- !u!65 &3131655009965427340
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566362159979204424}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.48679042, y: 1.939784, z: 0.18758869}
+  m_Center: {x: 2.265479, y: 0.9698932, z: -3.0690272}
+--- !u!1 &8272059384225813133 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 563778600062408590, guid: 8d05f1a65a783c6449f9774d18c8c9fa, type: 3}
+  m_PrefabInstance: {fileID: 8439380150870115587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2870659827489024990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8272059384225813133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.13333334
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: d52834e2b2963f74c9cd95816e8c710f, type: 2}
+  m_BuildHeightMesh: 0
