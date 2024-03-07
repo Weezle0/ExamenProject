@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
         {
             if (CheckUpgradable())
             {
-
+                
             }
         }
     }
@@ -65,6 +65,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log(target.transform.name);
             if (target.transform.gameObject.layer == 3)
             {
+                target.transform.GetComponentInParent<UpgradHandler>().Upgrade();
                 Debug.Log("Upgradeable");
                 return true;
             }

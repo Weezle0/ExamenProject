@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 918029160459054015}
   - component: {fileID: 7746295707420707875}
   - component: {fileID: 816372716158570075}
+  - component: {fileID: 6090327228253285665}
   m_Layer: 3
   m_Name: MoonShineDistilleryLvl1
   m_TagString: Untagged
@@ -52,7 +53,6 @@ MonoBehaviour:
   machineInventory:
     items: []
   resourceManager: {fileID: 0}
-  suppliesNeeded: 50
   resourceNeeded:
   - {fileID: 11400000, guid: 4e1922fc79ee9554ea35c992090c5e33, type: 2}
   outputAmount: 10
@@ -78,6 +78,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1811216, y: 0.7178468, z: 0.95620537}
   m_Center: {x: -0.09056085, y: 0.40751335, z: 0.021897316}
+--- !u!114 &6090327228253285665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2572490870744258636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b1f7d7410dc94e4f97b2fdf22bf02d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeButton: {fileID: 0}
 --- !u!1001 &8507690936024177007
 PrefabInstance:
   m_ObjectHideFlags: 0

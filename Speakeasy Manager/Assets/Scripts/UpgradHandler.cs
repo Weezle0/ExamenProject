@@ -7,11 +7,12 @@ public class UpgradHandler : MonoBehaviour
 
     List<GameObject> upgradeStages = new();
     private int currentStage;
-
+    public GameObject upgradeButton;
 
     // when upgrading make sure the new machine has the same inventory as previous machine
     public void Upgrade()
     {
+        upgradeButton.SetActive(true);
 
         MachineClass oldMachine = gameObject.GetComponent<MachineClass>();
         if(currentStage == upgradeStages.Count - 1)
@@ -25,7 +26,7 @@ public class UpgradHandler : MonoBehaviour
         {
             newMachine.GetComponent<MachineClass>().machineInventory.AddItem(0, oldMachine.SuppliesNeeded);
         }
-
+        newMachine.GetComponent<UpgradHandler>().upgradeButton = upgradeButton;
         Destroy(gameObject);
     }
 
