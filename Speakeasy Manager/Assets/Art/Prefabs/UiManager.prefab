@@ -47,3 +47,5 @@ MonoBehaviour:
   sfxAudiomixer: {fileID: 24100000, guid: 9bf4d6557b515af4f85532e494a4cb8b, type: 2}
   musicAudiomixer: {fileID: 24100000, guid: ae89da4af04ae0448866c26164369b93, type: 2}
   resolutionDropdown: {fileID: 0}
+  blinkingShader: {fileID: 2100000, guid: 3d075ff7e12cb404aa40b138bfff3a45, type: 2}
+  meterAnimator: {fileID: 0}

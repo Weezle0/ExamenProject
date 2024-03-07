@@ -4,14 +4,16 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class UiManager : MonoBehaviour
 {
     public AudioMixer sfxAudiomixer;
     public AudioMixer musicAudiomixer;
     public Dropdown resolutionDropdown;
-
+    public Material blinkingShader;
     Resolution[] resolutions;
+    public Animator meterAnimator;
 
 
     void Start()
@@ -37,6 +39,24 @@ public class UiManager : MonoBehaviour
         resolutionDropdown.value = currentResolutionIndex; 
         resolutionDropdown.RefreshShownValue();
     }
+
+    void Update()
+    {
+        if (meterAnimator.GetFloat("Heat") == 90)
+        {
+            blinkingShader.SetFloat("_BlinkSpeed", 1.5f);
+        }
+        else
+        {
+            blinkingShader.SetFloat("_BlinkSpeed", 0f);
+        }
+        if (meterAnimator.GetFloat("Influence") == 15)
+        {
+            blinkingShader.SetFloat("_BlinkSpeed", 1.5f);
+        }
+
+    }
+
     public void ChangeScene(int sceneNumber) //This ensures that the correct scene is loaded
     {
         SceneManager.LoadScene(sceneNumber);

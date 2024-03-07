@@ -233,6 +233,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0b652f32a2cc243917e4028fa0f046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1591160603 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8514684845844998452, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+  m_PrefabInstance: {fileID: 4535799612972559636}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1832615607
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +348,10 @@ PrefabInstance:
       value: UiManager
       objectReference: {fileID: 0}
     - target: {fileID: 3812144396854259537, guid: 667c67a06e2081b4cbd6d405554398ef, type: 3}
+      propertyPath: meterAnimator
+      value: 
+      objectReference: {fileID: 1591160603}
+    - target: {fileID: 3812144396854259537, guid: 667c67a06e2081b4cbd6d405554398ef, type: 3}
       propertyPath: resolutionDropdown
       value: 
       objectReference: {fileID: 699158946}
@@ -415,6 +424,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 834196704752883600, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1832615609}
     - target: {fileID: 2523698155100098208, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1212.9877
@@ -458,10 +471,6 @@ PrefabInstance:
     - target: {fileID: 6095244849583745469, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
       propertyPath: m_Name
       value: HUD
-      objectReference: {fileID: 0}
-    - target: {fileID: 6095244849583745469, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
