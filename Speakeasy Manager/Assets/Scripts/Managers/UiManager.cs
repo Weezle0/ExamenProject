@@ -50,10 +50,6 @@ public class UiManager : MonoBehaviour
         {
             blinkingShader.SetFloat("_BlinkSpeed", 0f);
         }
-        if (meterAnimator.GetFloat("Influence") == 15)
-        {
-            blinkingShader.SetFloat("_BlinkSpeed", 1.5f);
-        }
 
     }
 
