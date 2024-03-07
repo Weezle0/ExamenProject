@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -12,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     public void Start()
     {
-        mainCamera = Camera.main;
+        mainCamera = this.GetComponent<Camera>();
     }
     void Update()
     {
@@ -24,6 +25,14 @@ public class PlayerController : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         MoveCamera(horizontalInput, verticalInput);
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            if (CheckUpgradable())
+            {
+
+            }
+        }
     }
 
     void ZoomCamera(float delta)
@@ -45,5 +54,29 @@ public class PlayerController : MonoBehaviour
         newPosition.z += verticalInput * moveSpeed * Time.deltaTime;
 
         transform.position = newPosition;
+    }
+
+    private bool CheckUpgradable()
+    {
+        Debug.Log("Checking...");
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit target))
+        {
+            Debug.Log(target.transform.name);
+            if (target.transform.gameObject.layer == 3)
+            {
+                Debug.Log("Upgradeable");
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            Debug.Log(target.transform.name);
+        }
+        return false;
     }
 }

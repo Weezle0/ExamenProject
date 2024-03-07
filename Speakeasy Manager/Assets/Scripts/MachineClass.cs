@@ -13,11 +13,10 @@ public class MachineClass : MonoBehaviour
     public bool isCrafting;
     public Inventory machineInventory;
     [SerializeField] private ResourceManager resourceManager;
-    [SerializeField] private int suppliesNeeded;
+    public int SuppliesNeeded { get; private set; }
     [SerializeField] private ResourceData[] resourceNeeded;
     [SerializeField] private int outputAmount;
     [SerializeField] private ResourceData outputResource;
-
     public void Start()
     {
         resourceManager = ResourceManager.instance;
@@ -45,10 +44,10 @@ public class MachineClass : MonoBehaviour
 
             if (item.itemID == 0)
             {
-                if (item.amount >= suppliesNeeded)
+                if (item.amount >= SuppliesNeeded)
                 {
                     requiredResources.Remove(resourceManager.resources[item.itemID]);
-                    machineInventory.RemoveItem(item.itemID, suppliesNeeded);
+                    machineInventory.RemoveItem(item.itemID, SuppliesNeeded);
                     break;
                 }
 

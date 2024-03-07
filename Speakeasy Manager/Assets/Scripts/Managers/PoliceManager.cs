@@ -57,7 +57,7 @@ public class PoliceManager : MonoBehaviour
     void IncreaseHeatOverTime()
     {
         // making sure heat doesn't exceed the maximum value
-        heat = Mathf.Min(heat + heatIncreaseRate * Time.deltaTime, maxHeat);
+        heat = Mathf.Min(heat + heatIncreaseRate/1000 * Time.deltaTime, maxHeat/100);
         heatDisplayAnimator.SetFloat("Heat", heat * 1000);
 
         // when the heat is below 0, apply cooldown
@@ -79,7 +79,7 @@ public class PoliceManager : MonoBehaviour
         // Generate a random value between 0 and 1
         float randomValue = Random.value;
 
-        if (randomValue <= raidChance)
+        if (randomValue < raidChance)
         {
             SpawnPoliceRaid();
             // after police raid has started reset heat

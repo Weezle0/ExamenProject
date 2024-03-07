@@ -29,13 +29,8 @@ public class WorkerScript : MonoBehaviour
         if (currentMachine != null && !currentMachine.isCrafting)
         {
             isWorking = true;
-            bool canCraft = currentMachine.TryCraft();
-            if (!canCraft)
-            {
-                IsWorking = false;
-                StoreMoonShine();
-            }
-        }
+            currentMachine.TryCraft();
+        }   
         // else stop working
         if (currentMachine == null && isWorking)
         {

@@ -60,7 +60,7 @@ public class PoliceAgentScript : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No target found on specified layer!");
+            Debug.LogWarning("No target found on layer!");
         }
     }
 }

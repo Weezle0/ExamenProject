@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7746295707420707875}
   - component: {fileID: 816372716158570075}
   m_Layer: 3
-  m_Name: MoonShine Distillery
+  m_Name: MoonShineDistilleryLvl1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,9 +50,7 @@ MonoBehaviour:
   hasWorker: 0
   isCrafting: 0
   machineInventory:
-    items:
-    - itemID: 0
-      amount: 260
+    items: []
   resourceManager: {fileID: 0}
   suppliesNeeded: 50
   resourceNeeded:
@@ -90,39 +88,39 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 373204135254876074, guid: ce6c21896c23e1f47ac5056105b5801a, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 728444537198553006, guid: ce6c21896c23e1f47ac5056105b5801a, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3952605154007059998, guid: ce6c21896c23e1f47ac5056105b5801a, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3967310535531020308, guid: ce6c21896c23e1f47ac5056105b5801a, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6031719957961442551, guid: ce6c21896c23e1f47ac5056105b5801a, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6191629974550507252, guid: ce6c21896c23e1f47ac5056105b5801a, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6614244900100642112, guid: ce6c21896c23e1f47ac5056105b5801a, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6763554677553230425, guid: ce6c21896c23e1f47ac5056105b5801a, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6786741541150816776, guid: ce6c21896c23e1f47ac5056105b5801a, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7522657934657423466, guid: ce6c21896c23e1f47ac5056105b5801a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -166,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7883924928743083408, guid: ce6c21896c23e1f47ac5056105b5801a, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8537307808845949523, guid: ce6c21896c23e1f47ac5056105b5801a, type: 3}
       propertyPath: m_Name
@@ -174,11 +172,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537307808845949523, guid: ce6c21896c23e1f47ac5056105b5801a, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8626679027024989485, guid: ce6c21896c23e1f47ac5056105b5801a, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
