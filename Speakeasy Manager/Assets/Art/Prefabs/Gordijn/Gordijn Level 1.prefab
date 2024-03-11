@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 66e32419cad3c48458bf7f73f822e0ab, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 46c6620b60363874f90eb5bf4d4b8065, type: 2}
+      objectReference: {fileID: 2100000, guid: 69609738b371fb044a72158244535e87, type: 2}
     - target: {fileID: 919132149155446097, guid: 66e32419cad3c48458bf7f73f822e0ab, type: 3}
       propertyPath: m_Name
       value: Gordijn
