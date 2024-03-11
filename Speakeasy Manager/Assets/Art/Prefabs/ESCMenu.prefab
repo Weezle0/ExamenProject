@@ -480,7 +480,7 @@ GameObject:
   - component: {fileID: 1262228598406390623}
   - component: {fileID: 4773754810639915342}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

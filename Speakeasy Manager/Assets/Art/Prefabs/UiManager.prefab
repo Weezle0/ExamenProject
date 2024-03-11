@@ -108,9 +108,21 @@ PrefabInstance:
       value: ESCMenu
       objectReference: {fileID: 0}
     - target: {fileID: 5748483982985763059, guid: afb24527f23369943a27fb6b529176b5, type: 3}
+      propertyPath: m_MinValue
+      value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748483982985763059, guid: afb24527f23369943a27fb6b529176b5, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3812144396854259537}
+    - target: {fileID: 7681302741925510839, guid: afb24527f23369943a27fb6b529176b5, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681302741925510839, guid: afb24527f23369943a27fb6b529176b5, type: 3}
+      propertyPath: m_MinValue
+      value: -35
+      objectReference: {fileID: 0}
     - target: {fileID: 7681302741925510839, guid: afb24527f23369943a27fb6b529176b5, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
