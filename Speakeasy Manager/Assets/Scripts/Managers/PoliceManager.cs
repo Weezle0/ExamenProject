@@ -71,7 +71,7 @@ public class PoliceManager : MonoBehaviour
     void CheckRaidChance()
     {
         // check raid chance based on the heat level
-        raidChance = heat * raidProbabilityScale;
+        raidChance = heat/1000 * raidProbabilityScale;
     }
 
     void TrySpawnPoliceRaid()

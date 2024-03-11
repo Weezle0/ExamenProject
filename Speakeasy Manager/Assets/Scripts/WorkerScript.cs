@@ -5,8 +5,8 @@ using UnityEngine.AI;
 
 public class WorkerScript : MonoBehaviour
 {
-    public Inventory workerInventory = new();
-    [SerializeField]
+    public Inventory workerInventory = new();    
+    public bool isIdle = true;
     public bool IsWorking
     {
         get
@@ -18,59 +18,30 @@ public class WorkerScript : MonoBehaviour
             isWorking = value;
         }
     }
-    [SerializeField] private MachineClass currentMachine = null;
     [SerializeField] private bool isWorking;
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        // if worker is at a machine make the worker work
-        if (currentMachine != null && !currentMachine.isCrafting)
-        {
-            isWorking = true;
-            currentMachine.TryCraft();
-        }   
-        // else stop working
-        if (currentMachine == null && isWorking)
-        {
-            isWorking = false;
-        }
-    }
-
+    [SerializeField] private GameObject currentStation = null;
+    
     public void ChangeDestination(Transform targetTransform)
     {
         //set the new destination of the worker
         GetComponent<NavMeshAgent>().SetDestination(targetTransform.position);
     }
 
-    public MachineClass GetCurrentMachine()
+    public GameObject GetStation()
     {
-        if (currentMachine != null)
-        {
-            return currentMachine;
-        }
-        return null;
-    }
-
-    public void StoreMoonShine()
-    {
-        foreach (var item in workerInventory.items)
-        {
-            if (item.itemID == 1)
-            {
-                currentMachine.machineInventory.TransferItems(workerInventory, currentMachine.machineInventory, item.itemID, 5);
-            }
-        }
+        return currentStation;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(this.name + " found a machine");
-        if (other.transform.GetComponent<MachineClass>() && currentMachine == null)
+        if (other.transform.GetComponent<MachineClass>() && currentStation == null)
         {
-            currentMachine = other.transform.GetComponent<MachineClass>();
-            currentMachine.hasWorker = true;
+            currentStation = other.gameObject;
+            currentStation.GetComponent<MachineClass>().hasWorker = true;
+        }
+        if(other.transform.GetComponent<BarHandler>())
+        {
+            other.transform.GetComponent<BarHandler>().hasWorker = true;
         }
     }
 }

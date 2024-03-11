@@ -9,11 +9,13 @@ public class PlayerController : MonoBehaviour
     public float zoomSpeed = 5f;
     public float minZoom = 5f;
     public float maxZoom = 20f;
+    private WorkerManager workerManager;
     Camera mainCamera;
 
     public void Start()
     {
-        mainCamera = this.GetComponent<Camera>();
+        workerManager = WorkerManager.instance;
+        mainCamera = gameObject.GetComponent<Camera>();
     }
     void Update()
     {
@@ -28,9 +30,56 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0))
         {
-            if (CheckUpgradable())
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out RaycastHit target))
             {
-                
+                Debug.DrawLine(Camera.main.transform.position, target.transform.position);
+                // if the selected target is a worker update the worker manager
+                if(target.transform.GetComponent<WorkerScript>())
+                {
+                    Debug.Log("worker");
+                    var selectedWorker = target.transform.GetComponent<WorkerScript>();
+                    workerManager.selectedWorker = selectedWorker;
+                }
+
+
+                // if the selected target is a machine check if it already has a worker
+                if(target.transform.GetComponent<MachineClass>())
+                {
+                    MachineClass selectedMachine = target.transform.GetComponent<MachineClass>();
+                    if(selectedMachine.hasWorker)
+                    {
+                        // if it has a worker, enable the upgrade menu
+                    }
+
+                    // if it has no worker and there is a worker selected make it go the the machine
+                    else if(!selectedMachine.hasWorker && workerManager.selectedWorker != null)
+                    {
+                        workerManager.selectedWorker.ChangeDestination(selectedMachine.transform);
+                        workerManager.selectedWorker = null;
+                    }
+                }
+
+
+                // if the selected target is the bar, open the menu to upgrade it and open the sell menu
+                if(target.transform.GetComponent<BarHandler>())
+                {
+                    BarHandler selectedBar = target.transform.GetComponent<BarHandler>();
+                    if (selectedBar.hasWorker)
+                    {
+                        // enable upgrade menu
+                    }
+
+                    // if the bar has no worker and a worker is selected make the worker go to the bar
+                    else if (!selectedBar.hasWorker && workerManager.selectedWorker != null)
+                    {
+                        workerManager.selectedWorker.ChangeDestination(selectedBar.transform);
+                    }
+                }
+            }
+            else
+            {
+                Debug.Log("Nothing Hit");
             }
         }
     }
@@ -65,7 +114,6 @@ public class PlayerController : MonoBehaviour
             Debug.Log(target.transform.name);
             if (target.transform.gameObject.layer == 3)
             {
-                target.transform.GetComponentInParent<UpgradHandler>().Upgrade();
                 Debug.Log("Upgradeable");
                 return true;
             }

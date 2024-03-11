@@ -20,8 +20,14 @@ public class UiManager : MonoBehaviour
     {
         resolutions = Screen.resolutions; //Here we fill our array with the screen resolutions we get from unity 
 
-        resolutionDropdown.ClearOptions(); //Here we clear the dropdown options 
-        
+        if(resolutionDropdown != null )
+        {
+            resolutionDropdown.ClearOptions(); //Here we clear the dropdown options 
+
+           
+        }
+
+
         List<string> options = new List<string>(); //Here we create a list
 
         int currentResolutionIndex = 0;
@@ -35,9 +41,13 @@ public class UiManager : MonoBehaviour
                 currentResolutionIndex = i;
             }
         }
-        resolutionDropdown.AddOptions(options); //Here we fill the resolution drop down list with the options list
-        resolutionDropdown.value = currentResolutionIndex; 
-        resolutionDropdown.RefreshShownValue();
+        if(resolutionDropdown != null )
+        {
+            resolutionDropdown.AddOptions(options); //Here we fill the resolution drop down list with the options list
+            resolutionDropdown.value = currentResolutionIndex;
+            resolutionDropdown.RefreshShownValue();
+        }
+        
     }
 
     void Update()

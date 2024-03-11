@@ -5,7 +5,10 @@ using UnityEngine;
 public class WorkerManager : MonoBehaviour
 {
     public List<WorkerScript> workers = new();
+    public List<WorkerScript> idleWorkers = new();
+    public WorkerScript selectedWorker;
     public List<MachineClass> machines = new();
+    public BarHandler bar;
     public static WorkerManager instance;
     private float checkCooldown;
 
@@ -21,47 +24,31 @@ public class WorkerManager : MonoBehaviour
         {
             instance = this;
         }
-
-
     }
-    private void Update()
+    public void CheckMachineState(MachineClass machine)
     {
-        // every time the timer has passed 5 check if there is an idle machine
-        checkCooldown += Time.deltaTime;
-        if (checkCooldown <= 5)
+        // if there is an idle machine find an idle worker to work it
+        if (!machine.hasWorker)
         {
-            return;
+            FindIdleWorkers(machine.transform);
         }
-        checkCooldown = 0;
-        var idleMachine = FindIdleMachine();
-        if(idleMachine != null )
-        {
-            // if there is an idle machine find an idle worker to work it
-            FindIdleWorker(idleMachine.transform);
-        }
-        
+
     }
-    public MachineClass FindIdleMachine()
-    {
-        // check each machine to find if they are idle
-        foreach (MachineClass machine in machines)
-        {
-            if (!machine.hasWorker)
-            {
-                return machine.GetComponent<MachineClass>();
-            }
-        }
-        return null;
-    }
-    public void FindIdleWorker(Transform newTarget)
+    public void FindIdleWorkers(Transform newTarget)
     {
         // check each worker to find if they are idle
         foreach (WorkerScript worker in workers)
         {
-            if(!worker.IsWorking)
+            if (worker.isIdle)
             {
-                worker.ChangeDestination(newTarget);
-                return;
+                idleWorkers.Add(worker);
+            }
+            else
+            {
+                if (idleWorkers.Contains(worker))
+                {
+                    idleWorkers.Remove(worker);
+                }
             }
         }
     }

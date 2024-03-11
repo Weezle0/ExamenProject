@@ -21,18 +21,6 @@ public class MachineClass : MonoBehaviour
     {
         resourceManager = ResourceManager.instance;
     }
-
-    private void Update()
-    {
-        if(test)
-        {
-            foreach(var item in machineInventory.items)
-            {
-                Debug.Log($"item ID = {item.itemID} with amount: {item.amount}");
-            }
-            test = false;
-        }
-    }
     public bool TryCraft()
     {
         // check if the items in the inventory are of the supply type

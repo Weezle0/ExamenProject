@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UpgradHandler : MonoBehaviour
+public class UpgradeHandler : MonoBehaviour
 {
 
-    List<GameObject> upgradeStages = new();
+    public List<GameObject> upgradeStages = new();
     private int currentStage;
     public GameObject upgradeButton;
 
@@ -26,7 +26,8 @@ public class UpgradHandler : MonoBehaviour
         {
             newMachine.GetComponent<MachineClass>().machineInventory.AddItem(0, oldMachine.SuppliesNeeded);
         }
-        newMachine.GetComponent<UpgradHandler>().upgradeButton = upgradeButton;
+        newMachine.GetComponent<UpgradeHandler>().upgradeButton = upgradeButton;
+        newMachine.GetComponent<UpgradeHandler>().currentStage = currentStage+1;
         Destroy(gameObject);
     }
 
