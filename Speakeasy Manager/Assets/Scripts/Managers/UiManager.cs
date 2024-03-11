@@ -14,6 +14,7 @@ public class UiManager : MonoBehaviour
     public Material blinkingShader;
     Resolution[] resolutions;
     public Animator meterAnimator;
+    public GameObject escMenu;
 
 
     void Start()
@@ -59,6 +60,10 @@ public class UiManager : MonoBehaviour
         else
         {
             blinkingShader.SetFloat("_BlinkSpeed", 0f);
+        }
+        if (Input.GetButtonDown("Cancel"))
+        {
+            escMenu.SetActive(true);
         }
 
     }

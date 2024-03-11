@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5088567217733563505}
   - component: {fileID: 3718544809767335071}
   - component: {fileID: 3775113087498553563}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HeatMeter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 1552212964576060267}
   - component: {fileID: 2507717042607182108}
   - component: {fileID: 5568633885761382145}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MoneyAmount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 5446815962616583742}
   - component: {fileID: 3070293907705463710}
   - component: {fileID: 4678178624180815145}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: InfluenceMeter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -482,7 +482,7 @@ GameObject:
   - component: {fileID: 4282136458910731649}
   - component: {fileID: 4837707812475115575}
   - component: {fileID: 1078522875271499246}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Heat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 834196704752883600}
   - component: {fileID: 7525414923980965355}
   - component: {fileID: 1549727042865520127}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -777,7 +777,7 @@ GameObject:
   - component: {fileID: 8238078274701294765}
   - component: {fileID: 7717986587737525745}
   - component: {fileID: 84116216662055004}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Pointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -983,7 +983,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6082245686643151697}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Buttons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1019,7 +1019,7 @@ GameObject:
   - component: {fileID: 4562623693738159449}
   - component: {fileID: 111670967635141976}
   - component: {fileID: 8605823438894632067}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MiddleCircle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1094,7 +1094,7 @@ GameObject:
   - component: {fileID: 5321034295829922995}
   - component: {fileID: 4468277023448191876}
   - component: {fileID: 7898891042266437137}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BlinkingShader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1169,7 +1169,7 @@ GameObject:
   - component: {fileID: 9131457061765355490}
   - component: {fileID: 8807930444614266261}
   - component: {fileID: 1767139544798613112}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Pointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1243,7 +1243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2523698155100098208}
   - component: {fileID: 8514684845844998452}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1299,7 +1299,7 @@ GameObject:
   - component: {fileID: 1552174856521062075}
   - component: {fileID: 3789961663790293314}
   - component: {fileID: 8399958673534694144}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: DollarSign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1612,7 +1612,7 @@ GameObject:
   - component: {fileID: 4877743504277868056}
   - component: {fileID: 7309223443744837653}
   - component: {fileID: 5686901192292645387}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MoneyAddOrRemove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1707,7 +1707,7 @@ GameObject:
   - component: {fileID: 6623119181057935479}
   - component: {fileID: 3206312673251529716}
   - component: {fileID: 779418876721310679}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Influence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
