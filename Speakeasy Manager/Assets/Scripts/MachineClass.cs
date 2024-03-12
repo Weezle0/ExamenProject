@@ -7,19 +7,28 @@ using UnityEngine;
 
 public class MachineClass : MonoBehaviour
 {
-    public bool test;
-
     public bool hasWorker;
     public bool isCrafting;
     public Inventory machineInventory;
-    [SerializeField] private ResourceManager resourceManager;
+    public int machineLevel;
     public int SuppliesNeeded { get; private set; }
+    public WorkerScript currentWorker;
+
+    [SerializeField] private ResourceManager resourceManager;
     [SerializeField] private ResourceData[] resourceNeeded;
     [SerializeField] private int outputAmount;
     [SerializeField] private ResourceData outputResource;
     public void Start()
     {
         resourceManager = ResourceManager.instance;
+    }
+
+    private void Update()
+    {
+        if (hasWorker && !isCrafting)
+        {
+            TryCraft();
+        }
     }
     public bool TryCraft()
     {
@@ -48,11 +57,16 @@ public class MachineClass : MonoBehaviour
             StartCoroutine(CreateProduct());
             return true;
         }
+        else if(requiredResources.Count > 0)
+        {
+            isCrafting = true;
+            currentWorker.GatherResources();
+        }
         return false;
     }
     public void UpgradeMachine()
     {
-
+        gameObject.GetComponent<UpgradeHandler>().UpgradeConfirm();
     }
     private IEnumerator CreateProduct()
     {

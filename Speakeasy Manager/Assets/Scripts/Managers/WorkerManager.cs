@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class WorkerManager : MonoBehaviour
 {
@@ -25,29 +26,22 @@ public class WorkerManager : MonoBehaviour
             instance = this;
         }
     }
-    public void CheckMachineState(MachineClass machine)
-    {
-        // if there is an idle machine find an idle worker to work it
-        if (!machine.hasWorker)
-        {
-            FindIdleWorkers(machine.transform);
-        }
 
-    }
-    public void FindIdleWorkers(Transform newTarget)
+    public void TransferMoonShine()
     {
-        // check each worker to find if they are idle
-        foreach (WorkerScript worker in workers)
+        if(idleWorkers.Count <= 0)
         {
-            if (worker.isIdle)
+            return;
+        }
+        foreach (MachineClass machine in machines)
+        {
+            foreach (var item in machine.machineInventory.items)
             {
-                idleWorkers.Add(worker);
-            }
-            else
-            {
-                if (idleWorkers.Contains(worker))
+                if(item.itemID == 1)
                 {
-                    idleWorkers.Remove(worker);
+                    WorkerScript logisticWorker = idleWorkers[0].GetComponent<WorkerScript>();
+                    logisticWorker.SetStation(gameObject);
+                    logisticWorker.ChangeDestination(machine.transform);
                 }
             }
         }

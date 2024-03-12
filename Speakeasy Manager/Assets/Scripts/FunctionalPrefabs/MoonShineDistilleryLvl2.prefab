@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8406694493714610378}
   - component: {fileID: 4903630676297031203}
   - component: {fileID: 8609497756183256855}
+  - component: {fileID: 1372028452072502056}
+  - component: {fileID: 461928697612773062}
   m_Layer: 0
   m_Name: MoonShineDistilleryLvl2
   m_TagString: Untagged
@@ -46,13 +48,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2462e7244a178745a4e11a3c8192db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: 0
   hasWorker: 0
   isCrafting: 0
   machineInventory:
     items: []
+  machineLevel: 0
   resourceManager: {fileID: 0}
-  suppliesNeeded: 75
   resourceNeeded:
   - {fileID: 11400000, guid: 4e1922fc79ee9554ea35c992090c5e33, type: 2}
   outputAmount: 20
@@ -78,6 +79,46 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1372028452072502056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4396816634706250168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b1f7d7410dc94e4f97b2fdf22bf02d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeStages:
+  - {fileID: 2572490870744258636, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
+  - {fileID: 4396816634706250168}
+  - {fileID: 5738206054785239020, guid: 020131121e04a434abb6e9a419ec3c93, type: 3}
+  upgradeButton: {fileID: 0}
+  currentStage: 1
+  upgradeCost: 200
+--- !u!65 &461928697612773062
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4396816634706250168}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1289337, y: 5, z: 2.3524437}
+  m_Center: {x: 0.22071671, y: 2.5, z: 1.47}
 --- !u!1001 &1953325858034041041
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -6,7 +7,8 @@ public class PoliceAgentScript : MonoBehaviour
     public float idlePercentage;
     public LayerMask targetLayer;
     public float moveRadius;
-
+    public bool jobCompleted;
+    
     private PoliceManager policeManager;
     private NavMeshAgent agent;
     private GameObject[] targetObjects;
@@ -61,6 +63,20 @@ public class PoliceAgentScript : MonoBehaviour
         else
         {
             Debug.LogWarning("No target found on layer!");
+        }
+    }
+    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.GetComponent<MachineClass>() != null)
+        {
+            jobCompleted = true;
+            agent.SetDestination(policeManager.transform.position);
+        }
+        if(other.transform.GetComponent<PoliceManager>() && jobCompleted)
+        {
+            policeManager.RemovePolice(gameObject);
         }
     }
 }

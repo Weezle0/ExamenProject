@@ -7,6 +7,7 @@ public class BarHandler : MonoBehaviour
     
     public bool hasWorker;
     public Inventory barInventory = new Inventory();
+    public WorkerScript currentWorker;
     public float MoonshineValue
     {
         get

@@ -2,12 +2,14 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class PoliceManager : MonoBehaviour
 {
     public GameObject policeAgentPrefab;
     public static PoliceManager instance;
+    public List<PoliceAgentScript> policeAgents;
 
     [SerializeField] private EconomyManager economyManager;
     [SerializeField] private float heat = 0f;
@@ -37,6 +39,8 @@ public class PoliceManager : MonoBehaviour
     private void Start()
     {
         economyManager = EconomyManager.instance;
+
+        InvokeRepeating("CheckIdlePolice", 20, 20);
     }
     
     void Update()
@@ -52,13 +56,15 @@ public class PoliceManager : MonoBehaviour
 
         // try to spawn a police raid
         TrySpawnPoliceRaid();
+
+
     }
 
     void IncreaseHeatOverTime()
     {
         // making sure heat doesn't exceed the maximum value
-        heat = Mathf.Min(heat + heatIncreaseRate/1000 * Time.deltaTime, maxHeat/100);
-        heatDisplayAnimator.SetFloat("Heat", heat * 1000);
+        heat = Mathf.Min(heat + heatIncreaseRate * Time.deltaTime, maxHeat);
+        heatDisplayAnimator.SetFloat("Heat", heat);
 
         // when the heat is below 0, apply cooldown
         if (heat < 0)
@@ -71,7 +77,7 @@ public class PoliceManager : MonoBehaviour
     void CheckRaidChance()
     {
         // check raid chance based on the heat level
-        raidChance = heat/1000 * raidProbabilityScale;
+        raidChance = heat * raidProbabilityScale;
     }
 
     void TrySpawnPoliceRaid()
@@ -86,6 +92,22 @@ public class PoliceManager : MonoBehaviour
             heat = 0f;
         }
     }
+
+    void CheckIdlePolice()
+    {
+        if(policeAgents.Count <= 0)
+        {
+            return;
+        }
+        foreach(var policeAgent in policeAgents)
+        {
+            if(!policeAgent.jobCompleted)
+            {
+                policeAgent.jobCompleted = true;
+                policeAgent.GetComponent<NavMeshAgent>().SetDestination(gameObject.transform.position);
+            }
+        }
+    }    
 
     void SpawnPoliceRaid()
     {
@@ -115,11 +137,14 @@ public class PoliceManager : MonoBehaviour
 
     private void SpawnPolice()
     {
-        Instantiate(policeAgentPrefab, PoliceManager.instance.transform.position, Quaternion.identity);
+        GameObject newAgent = Instantiate(policeAgentPrefab, PoliceManager.instance.transform.position, Quaternion.identity);
+        policeAgents.Add(newAgent.GetComponent<PoliceAgentScript>());
     }
 
-    private void RemovePolice()
+    public void RemovePolice(GameObject policeToRemove)
     {
-
+        Debug.Log("police stopped");
+        policeAgents.Remove(policeToRemove.GetComponent<PoliceAgentScript>());
+        Destroy(policeToRemove);
     }
 }

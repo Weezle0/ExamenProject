@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public float minZoom = 5f;
     public float maxZoom = 20f;
     private WorkerManager workerManager;
-    Camera mainCamera;
+    private Camera mainCamera;
 
     public void Start()
     {
@@ -33,11 +33,9 @@ public class PlayerController : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit target))
             {
-                Debug.DrawLine(Camera.main.transform.position, target.transform.position);
                 // if the selected target is a worker update the worker manager
                 if(target.transform.GetComponent<WorkerScript>())
                 {
-                    Debug.Log("worker");
                     var selectedWorker = target.transform.GetComponent<WorkerScript>();
                     workerManager.selectedWorker = selectedWorker;
                 }
@@ -50,6 +48,7 @@ public class PlayerController : MonoBehaviour
                     if(selectedMachine.hasWorker)
                     {
                         // if it has a worker, enable the upgrade menu
+                        selectedMachine.UpgradeMachine();
                     }
 
                     // if it has no worker and there is a worker selected make it go the the machine
@@ -77,10 +76,6 @@ public class PlayerController : MonoBehaviour
                     }
                 }
             }
-            else
-            {
-                Debug.Log("Nothing Hit");
-            }
         }
     }
 
@@ -103,29 +98,5 @@ public class PlayerController : MonoBehaviour
         newPosition.z += verticalInput * moveSpeed * Time.deltaTime;
 
         transform.position = newPosition;
-    }
-
-    private bool CheckUpgradable()
-    {
-        Debug.Log("Checking...");
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit target))
-        {
-            Debug.Log(target.transform.name);
-            if (target.transform.gameObject.layer == 3)
-            {
-                Debug.Log("Upgradeable");
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-        else
-        {
-            Debug.Log(target.transform.name);
-        }
-        return false;
     }
 }
