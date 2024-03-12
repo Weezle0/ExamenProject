@@ -6944,7 +6944,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.13333334
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: dcf4810501c473847b0e02bd7d5e4d99, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 7435402fdf62f9346b35748751e125bc, type: 2}
   m_BuildHeightMesh: 0
 --- !u!82 &9212620908914122690
 AudioSource:
@@ -7324,6 +7324,9 @@ GameObject:
   - component: {fileID: 6505634074593947546}
   - component: {fileID: 7899248122875759376}
   - component: {fileID: 5005609636003882034}
+  - component: {fileID: 8262827724922597640}
+  - component: {fileID: 5534042875769571139}
+  - component: {fileID: 6518401252953949245}
   m_Layer: 0
   m_Name: Muren
   m_TagString: Untagged
@@ -7396,6 +7399,69 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8262827724922597640
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4799604528370713196}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 23.243904, y: 643.951, z: 194.09338}
+  m_Center: {x: 488.37747, y: 3.0243814, z: -96.93201}
+--- !u!65 &5534042875769571139
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4799604528370713196}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 563.95026, y: 24.142366, z: 194.09341}
+  m_Center: {x: 0.49895048, y: -762.7051, z: -96.93244}
+--- !u!65 &6518401252953949245
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4799604528370713196}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 459.06073, y: 31.110533, z: 194.09338}
+  m_Center: {x: 488.41934, y: -307.35306, z: -96.93274}
 --- !u!1 &4950907234068516066
 GameObject:
   m_ObjectHideFlags: 0
@@ -7979,6 +8045,8 @@ GameObject:
   - component: {fileID: 8622974045695697920}
   - component: {fileID: 162461515159206758}
   - component: {fileID: 5460044689261199737}
+  - component: {fileID: 6314140761153534561}
+  - component: {fileID: 7030443057608672926}
   m_Layer: 0
   m_Name: MurenKamer2
   m_TagString: Untagged
@@ -8051,6 +8119,48 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6314140761153534561
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5955018525644740761}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 14.6502495, y: 110.74827, z: 193.97842}
+  m_Center: {x: 258.21872, y: -352.64697, z: -96.98998}
+--- !u!65 &7030443057608672926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5955018525644740761}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16.781044, y: 428.22556, z: 193.97842}
+  m_Center: {x: 259.2842, y: -812.4399, z: -96.99053}
 --- !u!1 &5966680486120172104
 GameObject:
   m_ObjectHideFlags: 0

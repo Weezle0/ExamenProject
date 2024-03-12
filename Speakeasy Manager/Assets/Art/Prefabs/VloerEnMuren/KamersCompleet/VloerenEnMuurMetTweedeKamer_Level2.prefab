@@ -12963,7 +12963,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.13333334
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: dff3156abb72cb14ba745d6f36cdc5a2, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: f932089a0427f28499f0e97dc9bc05f9, type: 2}
   m_BuildHeightMesh: 0
 --- !u!82 &6703415701388606198
 AudioSource:
