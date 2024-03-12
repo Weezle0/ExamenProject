@@ -70,8 +70,22 @@
             "m_Id": "bba0acf178d34f1b8db82f13a81c0f08"
         }
     ],
-    "m_GroupDatas": [],
-    "m_StickyNoteDatas": [],
+    "m_GroupDatas": [
+        {
+            "m_Id": "01e4a961f8094abba2a029c7741bdda5"
+        },
+        {
+            "m_Id": "10f243486f3a4301a61e2c561e03a42a"
+        }
+    ],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "e93be8362c5d4f1e8bf464c3c3bf54fe"
+        },
+        {
+            "m_Id": "d9a5be9506f044f2b752b7a576c7f0ef"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -263,6 +277,17 @@
 }
 
 {
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "01e4a961f8094abba2a029c7741bdda5",
+    "m_Title": "Alpha",
+    "m_Position": {
+        "x": 10.0,
+        "y": 10.0
+    }
+}
+
+{
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
     "m_ObjectId": "02c4dd4f2be3455aabf97c9a17943b32",
@@ -318,6 +343,17 @@
     "m_Value": 1.0,
     "m_DefaultValue": 1.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "10f243486f3a4301a61e2c561e03a42a",
+    "m_Title": "Albedo",
+    "m_Position": {
+        "x": 10.0,
+        "y": 10.0
+    }
 }
 
 {
@@ -479,7 +515,7 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "38ccf3296d53458e9ec1c4e1f79c7e93",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "01e4a961f8094abba2a029c7741bdda5"
     },
     "m_Name": "Property",
     "m_DrawState": {
@@ -634,7 +670,7 @@
     "m_Type": "UnityEditor.ShaderGraph.TimeNode",
     "m_ObjectId": "54beab2d75b947b69a4f0b75d6a581c1",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "01e4a961f8094abba2a029c7741bdda5"
     },
     "m_Name": "Time",
     "m_DrawState": {
@@ -956,7 +992,7 @@
     "m_Type": "UnityEditor.ShaderGraph.SineNode",
     "m_ObjectId": "8d4b696213b544f0be35fe5c1fd5bf51",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "01e4a961f8094abba2a029c7741bdda5"
     },
     "m_Name": "Sine",
     "m_DrawState": {
@@ -1200,7 +1236,7 @@
     "m_Type": "UnityEditor.ShaderGraph.SampleTexture2DNode",
     "m_ObjectId": "bba0acf178d34f1b8db82f13a81c0f08",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "10f243486f3a4301a61e2c561e03a42a"
     },
     "m_Name": "Sample Texture 2D",
     "m_DrawState": {
@@ -1352,7 +1388,7 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "d93a987ded0140a7a76d4a6122c43cde",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "01e4a961f8094abba2a029c7741bdda5"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
@@ -1426,6 +1462,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "d9a5be9506f044f2b752b7a576c7f0ef",
+    "m_Title": "Albedo",
+    "m_Content": "Dit zorgt ervoor dat je via de unity editor een texture op de material kunt doen. Deze material gaat over de normale material heen van het object.",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -660.0,
+        "y": -158.0,
+        "width": 200.0,
+        "height": 160.0
+    },
+    "m_Group": {
+        "m_Id": "10f243486f3a4301a61e2c561e03a42a"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "e4f96e90f0f741bf960158f6f22bdf4a",
     "m_Id": 7,
@@ -1437,6 +1493,26 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "e93be8362c5d4f1e8bf464c3c3bf54fe",
+    "m_Title": "Alpha",
+    "m_Content": "Dit bepaald de transparantie van de material die over de geld asset gaat. \nDe doorzichtigheid veranderd met een sinusgolf vermenigvuldigd met een duur die je via de unity editor kunt aanpassen.",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -929.0,
+        "y": 507.0,
+        "width": 200.0,
+        "height": 160.0
+    },
+    "m_Group": {
+        "m_Id": "01e4a961f8094abba2a029c7741bdda5"
+    }
 }
 
 {
@@ -1540,7 +1616,7 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "f852b0c11a6a4588ae0828575f7273fa",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "10f243486f3a4301a61e2c561e03a42a"
     },
     "m_Name": "Property",
     "m_DrawState": {
