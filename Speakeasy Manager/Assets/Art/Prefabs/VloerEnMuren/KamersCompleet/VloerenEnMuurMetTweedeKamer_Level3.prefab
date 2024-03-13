@@ -6944,7 +6944,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.13333334
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 7435402fdf62f9346b35748751e125bc, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 8233aa8315a74ed4d8a49e1df21bc1e8, type: 2}
   m_BuildHeightMesh: 0
 --- !u!82 &9212620908914122690
 AudioSource:
@@ -8739,6 +8739,7 @@ MonoBehaviour:
   upgradeButton: {fileID: 0}
   currentStage: 2
   upgradeCost: 0
+  money: {fileID: 8438084597909796396, guid: a9760a905a43c8041ae01e5eeb850e6c, type: 3}
 --- !u!114 &7713608290309606869
 MonoBehaviour:
   m_ObjectHideFlags: 0

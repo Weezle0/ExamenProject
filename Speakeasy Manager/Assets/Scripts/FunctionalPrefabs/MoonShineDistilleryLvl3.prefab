@@ -100,6 +100,7 @@ MonoBehaviour:
   upgradeButton: {fileID: 0}
   currentStage: 2
   upgradeCost: 300
+  money: {fileID: 8438084597909796396, guid: a9760a905a43c8041ae01e5eeb850e6c, type: 3}
 --- !u!65 &9142613701510776249
 BoxCollider:
   m_ObjectHideFlags: 0

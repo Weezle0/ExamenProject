@@ -11,6 +11,7 @@ public class UpgradeHandler : MonoBehaviour
     [SerializeField] private  int currentStage;
     [SerializeField] private int upgradeCost;
     private EconomyManager economyManager;
+    [SerializeField] private GameObject money;
 
     private void Start()
     {
@@ -45,6 +46,8 @@ public class UpgradeHandler : MonoBehaviour
                 upgradeButton.gameObject.SetActive(false);
                 return;
             }
+            
+
             GameObject newMachine = Instantiate(upgradeStages[currentStage + 1]);
             if (oldMachine.machineInventory.items.Count > 0)
             {
@@ -92,7 +95,10 @@ public class UpgradeHandler : MonoBehaviour
 
             Destroy(oldBar.transform.parent.gameObject);
         }
-        
+
+        GameObject _money = Instantiate(money, WorkerManager.instance.bar.transform.GetChild(0).position, Quaternion.identity);
+        _money.transform.position = new Vector3(_money.transform.position.x, _money.transform.position.y + 1, _money.transform.position.z);
+
         upgradeButton.gameObject.SetActive(false);
     }
 

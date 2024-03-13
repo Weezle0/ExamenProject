@@ -211,7 +211,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.91183263, b: 0.5264151, a: 1}
-  m_Intensity: 2.32
+  m_Intensity: 1.5
   m_Range: 10.63
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -12799,7 +12799,6 @@ GameObject:
   - component: {fileID: 5677592299353717289}
   - component: {fileID: 6452452628352473054}
   - component: {fileID: 6703415701388606198}
-  - component: {fileID: 7741029112168208285}
   m_Layer: 0
   m_Name: VloerenEnMuurMetTweedeKamer_Level2
   m_TagString: Untagged
@@ -12900,7 +12899,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.13333334
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: f932089a0427f28499f0e97dc9bc05f9, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 9f4c6724124c02d489ad0a0c1d12d042, type: 2}
   m_BuildHeightMesh: 0
 --- !u!82 &6703415701388606198
 AudioSource:
@@ -12998,27 +12997,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!65 &7741029112168208285
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5008298218934034579}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: -0.1, z: -1.87}
 --- !u!1 &5048964703122596095
 GameObject:
   m_ObjectHideFlags: 0
@@ -18841,7 +18819,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.91183263, b: 0.5264151, a: 1}
-  m_Intensity: 2.32
+  m_Intensity: 1.5
   m_Range: 10.63
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -19102,6 +19080,7 @@ MonoBehaviour:
   upgradeButton: {fileID: 0}
   currentStage: 1
   upgradeCost: 2000
+  money: {fileID: 8438084597909796396, guid: a9760a905a43c8041ae01e5eeb850e6c, type: 3}
 --- !u!1 &7423570101698213394
 GameObject:
   m_ObjectHideFlags: 0

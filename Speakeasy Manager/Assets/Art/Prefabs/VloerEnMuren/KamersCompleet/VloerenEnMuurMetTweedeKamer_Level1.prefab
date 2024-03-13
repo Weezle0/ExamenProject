@@ -24707,6 +24707,7 @@ MonoBehaviour:
   upgradeButton: {fileID: 0}
   currentStage: 0
   upgradeCost: 0
+  money: {fileID: 8438084597909796396, guid: a9760a905a43c8041ae01e5eeb850e6c, type: 3}
 --- !u!1001 &7760236289183547671
 PrefabInstance:
   m_ObjectHideFlags: 0
