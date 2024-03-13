@@ -31,11 +31,12 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _Wave_Speed: 0.19
-    - _Wave_Strength: -0.29
+    - _Float: 0
+    - _Wave_Speed: 1.04
+    - _Wave_Strength: -0.3
     m_Colors:
-    - _BaseColor: {r: 0.6086935, g: 0.6428384, b: 0.6679245, a: 1}
-    - _Scroll_Velocity: {r: 0.16, g: 0, b: 0, a: 0}
+    - _BaseColor: {r: 0.6517408, g: 0.7190878, b: 0.90188676, a: 0.5176471}
+    - _Scroll_Velocity: {r: 0.02, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &9092502716239292503
 MonoBehaviour:

@@ -126,6 +126,45 @@
     "m_StickyNoteDatas": [
         {
             "m_Id": "37e5228a63bb4897a01c7f1c4d4fbb54"
+        },
+        {
+            "m_Id": "9d17b031d89c46ea907f2bf2d0ac5327"
+        },
+        {
+            "m_Id": "6d7ee0076bc64115ae1d50854782878d"
+        },
+        {
+            "m_Id": "d3e2f68423b24f1b8c8338b0b0530128"
+        },
+        {
+            "m_Id": "cf4f3479892f484ea423f6476b264840"
+        },
+        {
+            "m_Id": "4dc38dbea5b14562863d0bf8b9cbdf2a"
+        },
+        {
+            "m_Id": "0d3df057d84449d895b996384f5014f2"
+        },
+        {
+            "m_Id": "5ef57492ae864a7fac263f7f4cd19702"
+        },
+        {
+            "m_Id": "44a1b2ba580a492e9d6329ed87df42a7"
+        },
+        {
+            "m_Id": "f90cf3588f944698a033edcc99a6f27b"
+        },
+        {
+            "m_Id": "611c84d112314f4e87d9d4a8d4107d9d"
+        },
+        {
+            "m_Id": "1847bbd1cf514256a31e285c95ebd6f3"
+        },
+        {
+            "m_Id": "4cf18fe35fa04aafbdd2a5b63dbef165"
+        },
+        {
+            "m_Id": "c026349df13a47aabf6da93ea320d8e0"
         }
     ],
     "m_Edges": [
@@ -521,7 +560,7 @@
         },
         "preventRotation": false
     },
-    "m_Path": "Shader Graphs",
+    "m_Path": "Shader Graphs/Klaas",
     "m_GraphPrecision": 1,
     "m_PreviewMode": 2,
     "m_OutputNode": {
@@ -562,9 +601,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -334.4000244140625,
-            "y": 122.39998626708985,
-            "width": 125.60002136230469,
+            "x": -394.3999938964844,
+            "y": 82.39998626708985,
+            "width": 125.60000610351563,
             "height": 117.5999984741211
         }
     },
@@ -721,8 +760,28 @@
     "m_ObjectId": "0b6d82beb1344a39a034a6f63f9b5762",
     "m_Title": "Moves mesh",
     "m_Position": {
-        "x": 10.0,
-        "y": 10.0
+        "x": -1144.0,
+        "y": -33.600006103515628
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "0d3df057d84449d895b996384f5014f2",
+    "m_Title": "World",
+    "m_Content": "using world space you can tile other meshes together in the future and the wave will connect up properly",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -912.7999877929688,
+        "y": 201.60000610351563,
+        "width": 197.5999755859375,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "0b6d82beb1344a39a034a6f63f9b5762"
     }
 }
 
@@ -763,8 +822,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 759.2000732421875,
-            "y": 330.4000244140625,
+            "x": 722.4000244140625,
+            "y": 338.3999938964844,
             "width": 130.39996337890626,
             "height": 117.60000610351563
         }
@@ -839,6 +898,26 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "1847bbd1cf514256a31e285c95ebd6f3",
+    "m_Title": "",
+    "m_Content": "Opaque objects that use alpha clipping have the ability to cull pixels, but each pixel that is drawn is opaque, so its still pretty efficient",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 688.7999877929688,
+        "y": 1122.4000244140625,
+        "width": 240.79998779296876,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
     }
 }
 
@@ -1039,9 +1118,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -364.7999267578125,
-            "y": 1418.39990234375,
-            "width": 151.1999053955078,
+            "x": -396.79998779296877,
+            "y": 1420.8001708984375,
+            "width": 150.3999786376953,
             "height": 33.5999755859375
         }
     },
@@ -1082,19 +1161,19 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "37e5228a63bb4897a01c7f1c4d4fbb54",
-    "m_Title": "New Note",
-    "m_Content": "Write something here",
+    "m_Title": "Base Texture",
+    "m_Content": "It takes a texture as input\n",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -22.399999618530275,
-        "y": 127.19999694824219,
-        "width": 200.0,
-        "height": 160.00001525878907
+        "x": 14.399999618530274,
+        "y": 1056.0,
+        "width": 189.60000610351563,
+        "height": 100.0
     },
     "m_Group": {
-        "m_Id": "0b6d82beb1344a39a034a6f63f9b5762"
+        "m_Id": "6f5c39fd2823445aac7ab40738c8dd24"
     }
 }
 
@@ -1221,6 +1300,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "44a1b2ba580a492e9d6329ed87df42a7",
+    "m_Title": "Split",
+    "m_Content": "If we were to add just the X component to the timer, the waves will end up scrolling horizontally, and if we used just the Z instead it wil scroll the other horizontally. But by scrolling diagonally we can add the X  R(1)and the Z  B(1) . This value can be passed into the Sine node, wich essentially gives us the y-offset value we wanted.",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -639.2000122070313,
+        "y": 221.60000610351563,
+        "width": 325.6000061035156,
+        "height": 117.60000610351563
+    },
+    "m_Group": {
+        "m_Id": "0b6d82beb1344a39a034a6f63f9b5762"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.SplitNode",
     "m_ObjectId": "44a990c8c46c499ba45680f658be38a7",
     "m_Group": {
@@ -1231,10 +1330,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -585.6000366210938,
-            "y": 108.80000305175781,
-            "width": 119.20001220703125,
-            "height": 148.8000030517578
+            "x": -534.4000854492188,
+            "y": 72.79999542236328,
+            "width": 119.20010375976563,
+            "height": 148.80001831054688
         }
     },
     "m_Slots": [
@@ -1302,6 +1401,46 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "4cf18fe35fa04aafbdd2a5b63dbef165",
+    "m_Title": "Dither",
+    "m_Content": "it generates a dither pattern .                                      Dithering is a technique that we can fake transparency by culling pixels in a dithered pattern, so on a screen with sufficient resolution, the object still sort of appears transparent.",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 1184.800048828125,
+        "y": 1085.5999755859375,
+        "width": 328.7999267578125,
+        "height": 116.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "4dc38dbea5b14562863d0bf8b9cbdf2a",
+    "m_Title": "Wave Strength",
+    "m_Content": "Controls how far the vertex moves",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 8.800000190734864,
+        "y": 475.20001220703127,
+        "width": 200.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "0b6d82beb1344a39a034a6f63f9b5762"
+    }
 }
 
 {
@@ -1376,10 +1515,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 73.60000610351563,
-            "y": 479.2000427246094,
-            "width": 153.6000213623047,
-            "height": 33.599945068359378
+            "x": 20.799999237060548,
+            "y": 434.4000244140625,
+            "width": 153.59999084472657,
+            "height": 33.5999755859375
         }
     },
     "m_Slots": [
@@ -1485,10 +1624,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -179.19993591308595,
-            "y": 317.6000061035156,
-            "width": 125.59993743896485,
-            "height": 117.60000610351563
+            "x": -216.0,
+            "y": 325.6000061035156,
+            "width": 207.99998474121095,
+            "height": 301.5999450683594
         }
     },
     "m_Slots": [
@@ -1578,6 +1717,46 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "5ef57492ae864a7fac263f7f4cd19702",
+    "m_Title": "Split",
+    "m_Content": "the split node is to get specific components of the Position",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -580.7999877929688,
+        "y": -25.600000381469728,
+        "width": 197.5999755859375,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "0b6d82beb1344a39a034a6f63f9b5762"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "611c84d112314f4e87d9d4a8d4107d9d",
+    "m_Title": "",
+    "m_Content": "As you can see, it splits the vector4 into its components",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 877.5999755859375,
+        "y": 758.4000244140625,
+        "width": 240.800048828125,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
     }
 }
 
@@ -1784,6 +1963,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "6d7ee0076bc64115ae1d50854782878d",
+    "m_Title": "",
+    "m_Content": "By multiplying scroll velocity and time, we end up with a vector that grows and grows the same direction over time",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -412.79998779296877,
+        "y": 1302.4000244140625,
+        "width": 199.99998474121095,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "6f5c39fd2823445aac7ab40738c8dd24"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.TimeNode",
     "m_ObjectId": "6e44877f2d3945eeb101bea2a9ca6c75",
     "m_Group": {
@@ -1794,10 +1993,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -594.3999633789063,
-            "y": 354.3999938964844,
-            "width": 123.99996948242188,
-            "height": 172.80007934570313
+            "x": -631.199951171875,
+            "y": 362.3999938964844,
+            "width": 123.99990844726563,
+            "height": 172.80001831054688
         }
     },
     "m_Slots": [
@@ -2085,10 +2284,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -397.5999450683594,
-            "y": 1480.0,
-            "width": 124.00003051757813,
-            "height": 172.800048828125
+            "x": -379.2000427246094,
+            "y": 1468.8001708984375,
+            "width": 124.00004577636719,
+            "height": 172.7999267578125
         }
     },
     "m_Slots": [
@@ -2515,6 +2714,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "9d17b031d89c46ea907f2bf2d0ac5327",
+    "m_Title": "Sample Texture 2d",
+    "m_Content": "The RGBA is the full color of the texture. And the other four outputs are red,blue and green and alpha/transparency componenst of the colour",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 222.39999389648438,
+        "y": 1039.199951171875,
+        "width": 227.20001220703126,
+        "height": 104.0
+    },
+    "m_Group": {
+        "m_Id": "6f5c39fd2823445aac7ab40738c8dd24"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
     "m_ObjectId": "9d6f56ad3e54497699ea37bfb9823872",
     "m_Id": 0,
@@ -2587,9 +2806,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 51.19999694824219,
-            "y": 316.79998779296877,
-            "width": 128.0,
+            "x": 14.400029182434082,
+            "y": 324.7999572753906,
+            "width": 127.9998550415039,
             "height": 93.60000610351563
         }
     },
@@ -2785,9 +3004,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 325.6000061035156,
-            "y": 1425.5999755859375,
-            "width": 131.20004272460938,
+            "x": 328.79998779296877,
+            "y": 1422.4000244140625,
+            "width": 131.20001220703126,
             "height": 33.5999755859375
         }
     },
@@ -2908,8 +3127,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -871.2000122070313,
-            "y": 111.20001983642578,
+            "x": -1118.4000244140625,
+            "y": 122.39997100830078,
             "width": 208.0,
             "height": 312.800048828125
         }
@@ -2960,10 +3179,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -430.4000244140625,
-            "y": 352.79998779296877,
-            "width": 208.0,
-            "height": 301.60009765625
+            "x": -467.20001220703127,
+            "y": 360.79998779296877,
+            "width": 207.99996948242188,
+            "height": 301.60003662109377
         }
     },
     "m_Slots": [
@@ -3087,6 +3306,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "c026349df13a47aabf6da93ea320d8e0",
+    "m_Title": "",
+    "m_Content": "it takes a screen position as its second parameter, rather than a UV coordinate. that means this pattern will be applied in screen space, rather than over the surface of the object",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 1184.800048828125,
+        "y": 1207.199951171875,
+        "width": 330.39990234375,
+        "height": 112.800048828125
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector3Node",
     "m_ObjectId": "c143552f05754760b7828e29c62a7b42",
     "m_Group": {
@@ -3149,10 +3388,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -595.2000732421875,
-            "y": 544.0,
-            "width": 141.60012817382813,
-            "height": 33.60003662109375
+            "x": -632.0000610351563,
+            "y": 552.0,
+            "width": 141.60000610351563,
+            "height": 33.5999755859375
         }
     },
     "m_Slots": [
@@ -3261,9 +3500,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 281.60003662109377,
-            "y": 516.0,
-            "width": 208.00003051757813,
+            "x": 244.79995727539063,
+            "y": 524.0,
+            "width": 208.00009155273438,
             "height": 312.79998779296877
         }
     },
@@ -3284,6 +3523,26 @@
     },
     "m_Space": 0,
     "m_PositionSource": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "cf4f3479892f484ea423f6476b264840",
+    "m_Title": "Wave Speed",
+    "m_Content": "Controls how quickly each vertex moves up and down",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -692.0,
+        "y": 595.2000122070313,
+        "width": 200.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "0b6d82beb1344a39a034a6f63f9b5762"
+    }
 }
 
 {
@@ -3331,6 +3590,26 @@
         "e31": 0.0,
         "e32": 0.0,
         "e33": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "d3e2f68423b24f1b8c8338b0b0530128",
+    "m_Title": "",
+    "m_Content": "This node calculates a new set of uv's with the offset applied",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -38.400001525878909,
+        "y": 1219.199951171875,
+        "width": 181.60000610351563,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "6f5c39fd2823445aac7ab40738c8dd24"
     }
 }
 
@@ -3636,6 +3915,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "f90cf3588f944698a033edcc99a6f27b",
+    "m_Title": "",
+    "m_Content": "We scale the offset by multiplying it with the Wave Strength property and then create a new Vector 3 with 0 in the x and z fields, and our y-offset in the Y field . Now its a offset vector.",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -39.20000076293945,
+        "y": 212.8000030517578,
+        "width": 420.0,
+        "height": 99.99998474121094
+    },
+    "m_Group": {
+        "m_Id": "0b6d82beb1344a39a034a6f63f9b5762"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "f9ed2c065df0495ca15b7c9bf0667690",
     "m_Group": {
@@ -3646,10 +3945,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 267.20001220703127,
-            "y": 352.79998779296877,
-            "width": 125.60000610351563,
-            "height": 117.60003662109375
+            "x": 230.39991760253907,
+            "y": 360.79998779296877,
+            "width": 125.60011291503906,
+            "height": 117.60000610351563
         }
     },
     "m_Slots": [
