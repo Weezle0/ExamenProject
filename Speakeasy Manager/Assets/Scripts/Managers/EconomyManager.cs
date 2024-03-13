@@ -11,6 +11,7 @@ public class EconomyManager : MonoBehaviour
     [SerializeField] private Text moneyText;
     [SerializeField] private Text moneyChangeText;
     [SerializeField] private Animator moneyChangeAnimator;
+    public GameObject gameoOverScreen;
 
 
     private void Awake()
@@ -44,5 +45,9 @@ public class EconomyManager : MonoBehaviour
         money -= _amount;
         moneyText.text = money.ToString();
         moneyChangeText.text = "-" + _amount.ToString("F2");
+        if (money <= 0)
+        {
+            gameoOverScreen.SetActive(true);
+        }
     }
 }
