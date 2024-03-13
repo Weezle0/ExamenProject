@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BarHandler : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class BarHandler : MonoBehaviour
     public bool hasWorker;
     public Inventory barInventory = new Inventory();
     public WorkerScript currentWorker;
+    public Button sellButton;
+    public Button buyButton;
     public float MoonshineValue
     {
         get
@@ -23,17 +26,20 @@ public class BarHandler : MonoBehaviour
     private void Start()
     {
         economyManager = EconomyManager.instance;
+        sellButton.onClick.AddListener(TriggerSell);
     }
 
     private void Update()
     {
-        if(CheckBarInventory() && hasWorker)
+        if(hasWorker && CheckBarInventory())
         {
-            if (!isSelling)
-            {
-                StartCoroutine(SellMoonshine());
-            }
+            sellButton.gameObject.SetActive(true);
         }
+        else if(sellButton.gameObject.activeSelf)
+        {
+            sellButton.gameObject.SetActive(false);
+        }
+        
     }
     private bool CheckBarInventory()
     {
@@ -41,17 +47,46 @@ public class BarHandler : MonoBehaviour
         {
             if(item.itemID == 1)
             {
+                
                 return true;
             }
         }
         return false;
     }
 
+    public void TriggerSell()
+    {
+        if(CheckBarInventory())
+        {
+            Debug.Log("Selling");
+            StartCoroutine("SellMoonshine");
+        }
+    }
+
+    public void BuySupplies()
+    {
+        barInventory.AddItem(0, 2000);
+        economyManager.DecreaseMoney(500);
+    }
     public IEnumerator SellMoonshine()
     {
         isSelling = true;
-        economyManager.IncreaseMoney(moonshineValue);
+        
+        foreach(var item in barInventory.items)
+        {
+            if(item.itemID == 1)
+            {
+                economyManager.IncreaseMoney(moonshineValue * item.amount);
+                barInventory.items.Remove(item);
+                break;
+            }
+        }
         yield return new WaitForSeconds(sellCooldown);
         isSelling = false;
+    }
+
+    public void UpgradeBar()
+    {
+        gameObject.GetComponent<UpgradeHandler>().UpgradeConfirm();
     }
 }

@@ -5,9 +5,8 @@ using UnityEngine.AI;
 
 public class WorkerScript : MonoBehaviour
 {
-    public Inventory workerInventory = new();    
+    public Inventory workerInventory = new();
     public bool isIdle = true;
-    public Inventory barInventory;
     public bool IsWorking
     {
         get
@@ -21,14 +20,6 @@ public class WorkerScript : MonoBehaviour
     }
     [SerializeField] private bool isWorking;
     [SerializeField] private GameObject currentStation = null;
-
-    private void Update()
-    {
-        if(currentStation.GetComponent<MachineClass>() != null)
-        {
-
-        }
-    }
 
     public void ChangeDestination(Transform targetTransform)
     {
@@ -48,7 +39,8 @@ public class WorkerScript : MonoBehaviour
 
     public void GatherResources()
     {
-        ChangeDestination(FindObjectOfType<BarHandler>().transform);
+        Debug.Log("Gather Resources");
+        ChangeDestination(WorkerManager.instance.bar.transform);
     }
 
     public void StoreMoonshine()
@@ -64,7 +56,22 @@ public class WorkerScript : MonoBehaviour
             currentStation.GetComponent<MachineClass>().hasWorker = true;
             currentStation.GetComponent<MachineClass>().currentWorker = this;
         }
-
+        else if (other.transform.GetComponent<MachineClass>() == currentStation)
+        {
+            Debug.Log("Own Machine");
+            if (workerInventory.items.Count > 0)
+            {
+                foreach (var item in workerInventory.items)
+                {
+                    if (item.itemID == 0)
+                    {
+                        workerInventory.TransferItems(currentStation.GetComponent<MachineClass>().machineInventory, workerInventory, 0, 200);
+                        currentStation.GetComponent<MachineClass>().isCrafting = false;
+                        GetComponent<MachineClass>().TryCraft();
+                    }
+                }
+            }
+        }
         // if worker has no current station and collides with the bar make it the current station
         if (other.transform.GetComponent<BarHandler>() && currentStation == null)
         {
@@ -73,15 +80,19 @@ public class WorkerScript : MonoBehaviour
             other.GetComponent<BarHandler>().currentWorker = this;
         }
         // if the worker already has a station assume it want to collect resources
-        else if(other.transform.GetComponent<BarHandler>() && currentStation.GetComponent<BarHandler>() != null)
+        else if (other.transform.GetComponent<BarHandler>() && currentStation.GetComponent<MachineClass>())
         {
-            foreach(var item in barInventory.items)
+            foreach (var item in other.GetComponent<BarHandler>().barInventory.items)
             {
-                if(item.itemID == 0)
+                if (item.itemID == 0)
                 {
-                    Debug.Log("Got Resources");
+                    workerInventory.TransferItems(workerInventory, other.GetComponent<BarHandler>().barInventory, 0, 200);
+                    ChangeDestination(currentStation.transform);
+                    return;
                 }
             }
+
         }
     }
 }
+

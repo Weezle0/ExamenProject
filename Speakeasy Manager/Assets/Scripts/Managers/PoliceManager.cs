@@ -64,7 +64,7 @@ public class PoliceManager : MonoBehaviour
     {
         // making sure heat doesn't exceed the maximum value
         heat = Mathf.Min(heat + heatIncreaseRate * Time.deltaTime, maxHeat);
-        heatDisplayAnimator.SetFloat("Heat", heat);
+        heatDisplayAnimator.SetFloat("Heat", heat*100);
 
         // when the heat is below 0, apply cooldown
         if (heat < 0)
@@ -117,10 +117,9 @@ public class PoliceManager : MonoBehaviour
     }
     public void BribePolice()
     {
-
         // decrease heat after bribing police then make sure heat does not increase after bribing for X amount of time
-        heat = Mathf.Max(heat - bribeAmount, 0);
-        heatDisplayAnimator.SetFloat("Heat", heat * 1000);
+        heat = Mathf.Max(heat - 50/100, 0);
+        heatDisplayAnimator.SetFloat("Heat", heat * 100);
         economyManager.DecreaseMoney(bribeAmount);
         bribeAmount += bribeAmount * bribeMultiplier;
 

@@ -53,9 +53,11 @@ MonoBehaviour:
   machineInventory:
     items: []
   machineLevel: 0
+  currentWorker: {fileID: 0}
   resourceManager: {fileID: 0}
   resourceNeeded:
   - {fileID: 11400000, guid: 4e1922fc79ee9554ea35c992090c5e33, type: 2}
+  suppliesNeeded: 40
   outputAmount: 20
   outputResource: {fileID: 11400000, guid: 0c01db6efe4ed064baff890762882d11, type: 2}
 --- !u!65 &8609497756183256855

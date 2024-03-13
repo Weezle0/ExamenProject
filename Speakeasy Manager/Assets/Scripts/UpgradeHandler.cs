@@ -36,31 +36,63 @@ public class UpgradeHandler : MonoBehaviour
             return;
         }
         economyManager.DecreaseMoney(upgradeCost);
-        MachineClass oldMachine = gameObject.GetComponent<MachineClass>();
-        if(currentStage == upgradeStages.Count - 1)
+
+        if(gameObject.GetComponent<MachineClass>() != null)
         {
-            upgradeButton.gameObject.SetActive(false);
-            return;
+            MachineClass oldMachine = gameObject.GetComponent<MachineClass>();
+            if (currentStage == upgradeStages.Count - 1)
+            {
+                upgradeButton.gameObject.SetActive(false);
+                return;
+            }
+            GameObject newMachine = Instantiate(upgradeStages[currentStage + 1]);
+            if (oldMachine.machineInventory.items.Count > 0)
+            {
+                newMachine.GetComponent<MachineClass>().machineInventory.items = oldMachine.machineInventory.items;
+            }
+
+            if (oldMachine.isCrafting)
+            {
+                newMachine.GetComponent<MachineClass>().machineInventory.AddItem(0, oldMachine.SuppliesNeeded);
+            }
+            newMachine.GetComponent<UpgradeHandler>().upgradeButton = upgradeButton;
+            newMachine.GetComponent<UpgradeHandler>().currentStage = currentStage + 1;
+            newMachine.transform.position = oldMachine.transform.position;
+
+            newMachine.GetComponent<MachineClass>().hasWorker = true;
+            oldMachine.currentWorker.SetStation(newMachine);
+            newMachine.GetComponent<MachineClass>().currentWorker = oldMachine.currentWorker;
+
+            Destroy(oldMachine.gameObject);
+            
         }
-        GameObject newMachine = Instantiate(upgradeStages[currentStage + 1]);
-        if(oldMachine.machineInventory.items.Count > 0)
+        else if(gameObject.GetComponent<BarHandler>() != null)
         {
-           newMachine.GetComponent<MachineClass>().machineInventory.items = oldMachine.machineInventory.items;
+            BarHandler oldBar = gameObject.GetComponent<BarHandler>();
+            if (currentStage == upgradeStages.Count - 1)
+            {
+                upgradeButton.gameObject.SetActive(false);
+                return;
+            }
+            GameObject newBar = Instantiate(upgradeStages[currentStage + 1]);
+
+            if (oldBar.barInventory.items.Count > 0)
+            {
+                newBar.GetComponentInChildren<BarHandler>().barInventory.items = oldBar.barInventory.items;
+            }
+            newBar.GetComponentInChildren<UpgradeHandler>().upgradeButton = upgradeButton;
+            newBar.GetComponentInChildren<UpgradeHandler>().currentStage = currentStage + 1;
+
+            newBar.GetComponentInChildren<BarHandler>().sellButton = oldBar.GetComponent<BarHandler>().sellButton;
+            newBar.GetComponentInChildren<BarHandler>().buyButton = oldBar.GetComponent<BarHandler>().buyButton;
+
+            newBar.GetComponentInChildren<BarHandler>().hasWorker = true;
+            oldBar.currentWorker.SetStation(newBar);
+            newBar.GetComponentInChildren<BarHandler>().currentWorker = oldBar.currentWorker;
+
+            Destroy(oldBar.transform.parent.gameObject);
         }
-       
-        if(oldMachine.isCrafting)
-        {
-            newMachine.GetComponent<MachineClass>().machineInventory.AddItem(0, oldMachine.SuppliesNeeded);
-        }
-        newMachine.GetComponent<UpgradeHandler>().upgradeButton = upgradeButton;
-        newMachine.GetComponent<UpgradeHandler>().currentStage = currentStage+1;
-        newMachine.transform.position = oldMachine.transform.position;
         
-        newMachine.GetComponent<MachineClass>().hasWorker = true;
-        oldMachine.currentWorker.SetStation(newMachine);
-        newMachine.GetComponent<MachineClass>().currentWorker = oldMachine.currentWorker;
-        
-        Destroy(oldMachine.gameObject);
         upgradeButton.gameObject.SetActive(false);
     }
 

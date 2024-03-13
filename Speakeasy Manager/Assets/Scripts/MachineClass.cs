@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class MachineClass : MonoBehaviour
 {
@@ -11,11 +12,22 @@ public class MachineClass : MonoBehaviour
     public bool isCrafting;
     public Inventory machineInventory;
     public int machineLevel;
-    public int SuppliesNeeded { get; private set; }
+    public int SuppliesNeeded
+    {
+        get
+        {
+            return suppliesNeeded;
+        }
+        private set
+        {
+            suppliesNeeded = value;
+        }
+    }
     public WorkerScript currentWorker;
 
     [SerializeField] private ResourceManager resourceManager;
     [SerializeField] private ResourceData[] resourceNeeded;
+    [SerializeField] private int suppliesNeeded;
     [SerializeField] private int outputAmount;
     [SerializeField] private ResourceData outputResource;
     public void Start()
@@ -27,7 +39,11 @@ public class MachineClass : MonoBehaviour
     {
         if (hasWorker && !isCrafting)
         {
-            TryCraft();
+            isCrafting = true;
+            if (TryCraft() == false)
+            {
+                currentWorker.GatherResources();
+            }
         }
     }
     public bool TryCraft()
@@ -38,18 +54,13 @@ public class MachineClass : MonoBehaviour
         // check each item in the inventory to see if it contains enough supllies
         foreach (var item in machineInventory.items)
         {
-
             if (item.itemID == 0)
             {
                 if (item.amount >= SuppliesNeeded)
                 {
                     requiredResources.Remove(resourceManager.resources[item.itemID]);
-                    machineInventory.RemoveItem(item.itemID, SuppliesNeeded);
-                    break;
                 }
-
             }
-
         }
         if (requiredResources.Count == 0 && !isCrafting)
         {
@@ -57,12 +68,10 @@ public class MachineClass : MonoBehaviour
             StartCoroutine(CreateProduct());
             return true;
         }
-        else if(requiredResources.Count > 0)
+        else
         {
-            isCrafting = true;
-            currentWorker.GatherResources();
+            return false;
         }
-        return false;
     }
     public void UpgradeMachine()
     {
@@ -70,6 +79,7 @@ public class MachineClass : MonoBehaviour
     }
     private IEnumerator CreateProduct()
     {
+        machineInventory.RemoveItem(0, SuppliesNeeded);
         yield return new WaitForSeconds(5);
         machineInventory.AddItem(1, outputAmount);
         yield return new WaitForSeconds(1);

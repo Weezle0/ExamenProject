@@ -220,8 +220,6 @@ MonoBehaviour:
   workerInventory:
     items: []
   isIdle: 1
-  barInventory:
-    items: []
   isWorking: 0
   currentStation: {fileID: 0}
 --- !u!136 &217187616
@@ -415,11 +413,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8440701776051430940, guid: 667c67a06e2081b4cbd6d405554398ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 667c67a06e2081b4cbd6d405554398ef, type: 3}
+--- !u!1 &426839083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8440701776051430940, guid: 667c67a06e2081b4cbd6d405554398ef, type: 3}
+  m_PrefabInstance: {fileID: 426839082}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &608082582 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8514684845844998452, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
@@ -513,6 +520,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2920933824603440342, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920933824603440342, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920933824603440342, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1746886115439460822, guid: 70a916ec600abc048bd1aef22c8119b8, type: 3}
+    - target: {fileID: 2920933824603440342, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920933824603440342, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TriggerSell
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920933824603440342, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BarHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920933824603440342, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6095244849583745469, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
       propertyPath: m_Name
       value: HUD
@@ -549,15 +584,45 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6910916158637270103, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7055634429521908884, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1752882055}
+    - target: {fileID: 8155910804749735204, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+--- !u!114 &756958863 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2920933824603440342, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+  m_PrefabInstance: {fileID: 728799572}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &805771390 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5871118654367051006, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+  m_PrefabInstance: {fileID: 728799572}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &828452363 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6602786551908946625, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
@@ -655,8 +720,6 @@ MonoBehaviour:
   workerInventory:
     items: []
   isIdle: 1
-  barInventory:
-    items: []
   isWorking: 0
   currentStation: {fileID: 0}
 --- !u!136 &937528188
@@ -763,6 +826,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5073927380749477581, guid: 667c67a06e2081b4cbd6d405554398ef, type: 3}
   m_PrefabInstance: {fileID: 426839082}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1257606169 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 295098915792096950, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
+  m_PrefabInstance: {fileID: 1830870875}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a1c8fc655e1904eb648e47a60d19f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1312625458
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,8 +923,6 @@ MonoBehaviour:
   workerInventory:
     items: []
   isIdle: 1
-  barInventory:
-    items: []
   isWorking: 0
   currentStation: {fileID: 0}
 --- !u!136 &1312625462
@@ -993,7 +1065,7 @@ MonoBehaviour:
   selectedWorker: {fileID: 0}
   machines:
   - {fileID: 4256385432073462719}
-  bar: {fileID: 0}
+  bar: {fileID: 1257606169}
 --- !u!1 &1509607830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,7 +1170,7 @@ MonoBehaviour:
   heat: 0
   heatIncreaseRate: 0.01
   maxHeat: 1
-  raidProbabilityScale: 0.001
+  raidProbabilityScale: 0.0005
   heatDisplayAnimator: {fileID: 608082582}
   bribeAmount: 10
   bribeMultiplier: 0.5
@@ -1147,10 +1219,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1216431141328833346, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
-      propertyPath: m_NavMeshData
+    - target: {fileID: 295098915792096950, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
+      propertyPath: buyButton
       value: 
-      objectReference: {fileID: 23800000, guid: 85e316efc9f1e9b4e887b8a9d1906bdd, type: 2}
+      objectReference: {fileID: 805771390}
+    - target: {fileID: 295098915792096950, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
+      propertyPath: sellButton
+      value: 
+      objectReference: {fileID: 756958863}
     - target: {fileID: 3740577939655786896, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1195,13 +1271,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: VloerenEnMuurMetTweedeKamer_Level1
       objectReference: {fileID: 0}
+    - target: {fileID: 6958104915511107532, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
+      propertyPath: upgradeCost
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958104915511107532, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
+      propertyPath: currentStage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958104915511107532, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
+      propertyPath: upgradeButton
+      value: 
+      objectReference: {fileID: 828452363}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5097604379526567307, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2028651695}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
 --- !u!1 &1900343586
 GameObject:
@@ -1269,7 +1354,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 95
+    m_Bits: 223
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1407,32 +1492,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 72.38, y: 0, z: 0}
---- !u!1 &2028651688 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5097604379526567307, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
-  m_PrefabInstance: {fileID: 1830870875}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &2028651695
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028651688}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 240.67683, y: 457.0246, z: 194.09338}
-  m_Center: {x: -379.661, y: -546.25366, z: -96.932304}
 --- !u!1 &2120455973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,6 +1623,7 @@ MonoBehaviour:
   moneyText: {fileID: 79432472}
   moneyChangeText: {fileID: 1077788969}
   moneyChangeAnimator: {fileID: 608082582}
+  gameoOverScreen: {fileID: 426839083}
 --- !u!1001 &1805960803641916150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1620,6 +1680,14 @@ PrefabInstance:
       propertyPath: upgradeButton
       value: 
       objectReference: {fileID: 828452363}
+    - target: {fileID: 7746295707420707875, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
+      propertyPath: machineInventory.items.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746295707420707875, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
+      propertyPath: machineInventory.items.Array.data[0].amount
+      value: 250
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1681,6 +1749,18 @@ PrefabInstance:
       propertyPath: upgradeButton
       value: 
       objectReference: {fileID: 828452363}
+    - target: {fileID: 7746295707420707875, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
+      propertyPath: suppliesNeeded
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746295707420707875, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
+      propertyPath: machineInventory.items.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746295707420707875, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
+      propertyPath: machineInventory.items.Array.data[0].amount
+      value: 250
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

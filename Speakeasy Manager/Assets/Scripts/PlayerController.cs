@@ -31,8 +31,10 @@ public class PlayerController : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit target))
+            LayerMask layer = LayerMask.GetMask("Worker", "IllegalObject", "Bar");
+            if (Physics.Raycast(ray, out RaycastHit target, 1000 , layer))
             {
+                //Debug.Log(target.transform.name);
                 // if the selected target is a worker update the worker manager
                 if(target.transform.GetComponent<WorkerScript>())
                 {
@@ -66,7 +68,7 @@ public class PlayerController : MonoBehaviour
                     BarHandler selectedBar = target.transform.GetComponent<BarHandler>();
                     if (selectedBar.hasWorker)
                     {
-                        // enable upgrade menu
+                        selectedBar.UpgradeBar();
                     }
 
                     // if the bar has no worker and a worker is selected make the worker go to the bar
