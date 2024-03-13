@@ -16942,6 +16942,12 @@ Transform:
   - {fileID: 6233468039969257722}
   - {fileID: 3161614345766990262}
   - {fileID: 3194645912553473221}
+  - {fileID: 2565078160618987920}
+  - {fileID: 6435243795226717295}
+  - {fileID: 3998611927633302794}
+  - {fileID: 7656873927980356832}
+  - {fileID: 2965274901866961877}
+  - {fileID: 2204724816596352751}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1216431141328833346
@@ -24562,6 +24568,68 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &179707551580679815
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3740577939655786896}
+    m_Modifications:
+    - target: {fileID: 7167212697143189725, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_Name
+      value: Vies beige kussen (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.484
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.017
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7798383
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.13869971
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6009901
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.106890306
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -20.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 284.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+--- !u!4 &7656873927980356832 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+  m_PrefabInstance: {fileID: 179707551580679815}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1707031995407967349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24902,6 +24970,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2109489365469903216, guid: a7b2c046eccc7c84bbd0819a3ba1cf2d, type: 3}
   m_PrefabInstance: {fileID: 3536382263781195189}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3562991030818412040
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3740577939655786896}
+    m_Modifications:
+    - target: {fileID: 7167212697143189725, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_Name
+      value: Vies beige kussen (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.484
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6009902
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.10689031
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.77983826
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.13869971
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -20.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 104.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+--- !u!4 &6435243795226717295 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+  m_PrefabInstance: {fileID: 3562991030818412040}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3937876815723645126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24963,6 +25093,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2109489365469903216, guid: a7b2c046eccc7c84bbd0819a3ba1cf2d, type: 3}
   m_PrefabInstance: {fileID: 3937876815723645126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4691088925185974706
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3740577939655786896}
+    m_Modifications:
+    - target: {fileID: 7167212697143189725, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_Name
+      value: Vies beige kussen (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.317
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.484
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.49048755
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.08723665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.85367376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.15183187
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -20.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 239.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+--- !u!4 &2965274901866961877 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+  m_PrefabInstance: {fileID: 4691088925185974706}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4806944246362348600
 PrefabInstance:
@@ -25026,6 +25218,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 899056065276835404, guid: 9610f8b9be9198545a36e52df7e25277, type: 3}
   m_PrefabInstance: {fileID: 4806944246362348600}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5450518466419055607
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3740577939655786896}
+    m_Modifications:
+    - target: {fileID: 7167212697143189725, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_Name
+      value: Vies beige kussen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.317
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.484
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.017
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7798383
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.13869971
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6009901
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.106890306
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -20.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 284.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+--- !u!4 &2565078160618987920 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+  m_PrefabInstance: {fileID: 5450518466419055607}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6857056843903337223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25087,6 +25341,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6669101330195045139, guid: f56c7850c070ec844933eb08cc1ece4c, type: 3}
   m_PrefabInstance: {fileID: 6857056843903337223}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6863821222710013805
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3740577939655786896}
+    m_Modifications:
+    - target: {fileID: 7167212697143189725, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_Name
+      value: Vies beige kussen (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.484
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8536737
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.15183185
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.49048764
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.087236665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -20.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 59.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+--- !u!4 &3998611927633302794 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+  m_PrefabInstance: {fileID: 6863821222710013805}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7142660962633125837
 PrefabInstance:
@@ -25211,6 +25527,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1369332067882705717, guid: 2d2db11cd5aa7694ebfe61f7cb4106e9, type: 3}
   m_PrefabInstance: {fileID: 7760236289183547671}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8548989739995579528
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3740577939655786896}
+    m_Modifications:
+    - target: {fileID: 7167212697143189725, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_Name
+      value: Vies beige kussen (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.484
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.49048755
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.08723665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.85367376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.15183187
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -20.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 239.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+--- !u!4 &2204724816596352751 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7511121639452703335, guid: 4ccfdbe2b15338743aa93bbc969fd898, type: 3}
+  m_PrefabInstance: {fileID: 8548989739995579528}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9090799216010185687
 PrefabInstance:
