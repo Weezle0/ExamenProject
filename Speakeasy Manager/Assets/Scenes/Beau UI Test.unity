@@ -187,6 +187,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 3.086
       objectReference: {fileID: 0}
+    - target: {fileID: 7713608290309606869, guid: 47adcfb0e8618b644ad0394b77ddc323, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9212620908914122690, guid: 47adcfb0e8618b644ad0394b77ddc323, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -280,67 +284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0b652f32a2cc243917e4028fa0f046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1410521061
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 899056065276835404, guid: 9610f8b9be9198545a36e52df7e25277, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.2685
-      objectReference: {fileID: 0}
-    - target: {fileID: 899056065276835404, guid: 9610f8b9be9198545a36e52df7e25277, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.678
-      objectReference: {fileID: 0}
-    - target: {fileID: 899056065276835404, guid: 9610f8b9be9198545a36e52df7e25277, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.6214
-      objectReference: {fileID: 0}
-    - target: {fileID: 899056065276835404, guid: 9610f8b9be9198545a36e52df7e25277, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 899056065276835404, guid: 9610f8b9be9198545a36e52df7e25277, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 899056065276835404, guid: 9610f8b9be9198545a36e52df7e25277, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 899056065276835404, guid: 9610f8b9be9198545a36e52df7e25277, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 899056065276835404, guid: 9610f8b9be9198545a36e52df7e25277, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 899056065276835404, guid: 9610f8b9be9198545a36e52df7e25277, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 899056065276835404, guid: 9610f8b9be9198545a36e52df7e25277, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8244473129928166421, guid: 9610f8b9be9198545a36e52df7e25277, type: 3}
-      propertyPath: m_Name
-      value: Asbak met sigaren
-      objectReference: {fileID: 0}
-    - target: {fileID: 8244473129928166421, guid: 9610f8b9be9198545a36e52df7e25277, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9610f8b9be9198545a36e52df7e25277, type: 3}
 --- !u!95 &1591160603 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8514684845844998452, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
@@ -677,6 +620,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8514684845844998452, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -839,4 +786,3 @@ SceneRoots:
   - {fileID: 1559600224849348271}
   - {fileID: 451893728}
   - {fileID: 427801798}
-  - {fileID: 1410521061}
