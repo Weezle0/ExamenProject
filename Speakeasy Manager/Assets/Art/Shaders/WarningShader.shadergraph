@@ -58,10 +58,10 @@
             "m_Id": "b7d5f984aabf4aaf811d4633ce748186"
         },
         {
-            "m_Id": "95987098aa5c42128d151a72c77832e1"
+            "m_Id": "180f3c07bd2e4af3a1f601d6abe11586"
         },
         {
-            "m_Id": "180f3c07bd2e4af3a1f601d6abe11586"
+            "m_Id": "cd373240c6af41a1a7a29ceb5891e090"
         }
     ],
     "m_GroupDatas": [
@@ -78,6 +78,12 @@
         },
         {
             "m_Id": "7659852eacaf4721b4b3b94443ce761f"
+        },
+        {
+            "m_Id": "dbdcc03493e641ae8e4c3cf1b5214810"
+        },
+        {
+            "m_Id": "f14e11a667454454b2217fff98b2e0c8"
         }
     ],
     "m_Edges": [
@@ -104,9 +110,9 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "95987098aa5c42128d151a72c77832e1"
+                    "m_Id": "cd373240c6af41a1a7a29ceb5891e090"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 2
             }
         },
         {
@@ -135,20 +141,6 @@
                     "m_Id": "0a1d2d187e0a49179c524f14fcc62058"
                 },
                 "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "95987098aa5c42128d151a72c77832e1"
-                },
-                "m_SlotId": 3
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "4b4574cde1094fdc9c5409ce9639ab8f"
-                },
-                "m_SlotId": 0
             }
         },
         {
@@ -189,6 +181,20 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "e5f45459511a4dd29fabc4be22b91b16"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "cd373240c6af41a1a7a29ceb5891e090"
+                },
+                "m_SlotId": 3
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "4b4574cde1094fdc9c5409ce9639ab8f"
                 },
                 "m_SlotId": 0
             }
@@ -400,10 +406,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -444.8000183105469,
-            "y": 721.5999755859375,
-            "width": 125.5999755859375,
-            "height": 117.60003662109375
+            "x": -594.4000244140625,
+            "y": 744.0,
+            "width": 125.60000610351563,
+            "height": 117.5999755859375
         }
     },
     "m_Slots": [
@@ -514,10 +520,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -589.6000366210938,
-            "y": 721.5999755859375,
-            "width": 123.99996948242188,
-            "height": 172.80010986328126
+            "x": -739.2000732421875,
+            "y": 744.0,
+            "width": 124.0,
+            "height": 172.800048828125
         }
     },
     "m_Slots": [
@@ -769,18 +775,18 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
-    "m_ObjectId": "5fc356e9c4c54f408dd6ee25bde48b45",
-    "m_Id": 2,
-    "m_DisplayName": "Max",
+    "m_ObjectId": "5c7cf2870999464db3e052bff26f500a",
+    "m_Id": 0,
+    "m_DisplayName": "In",
     "m_SlotType": 0,
     "m_Hidden": false,
-    "m_ShaderOutputName": "Max",
+    "m_ShaderOutputName": "In",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.5,
-        "y": 1.0,
-        "z": 1.0,
-        "w": 1.0
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -946,18 +952,42 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "73e13a21e34647e3b7e18b2f1a574ac9",
+    "m_Id": 2,
+    "m_DisplayName": "Max",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Max",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "7659852eacaf4721b4b3b94443ce761f",
-    "m_Title": "Blinking",
-    "m_Content": "Here i make the circle blink",
+    "m_Title": "Time ",
+    "m_Content": "Here i take the sine time and multiply it with blinking speed to make it blink faster ",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -824.7999877929688,
-        "y": 841.5999755859375,
+        "x": -960.0,
+        "y": 748.0,
         "width": 200.0,
-        "height": 160.0
+        "height": 165.5999755859375
     },
     "m_Group": {
         "m_Id": "b868be364cd1434e8f2567968af6d2b0"
@@ -1020,30 +1050,6 @@
 }
 
 {
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
-    "m_ObjectId": "8c8dc438a06547b3b48784ad3d833220",
-    "m_Id": 1,
-    "m_DisplayName": "Min",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Min",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    }
-}
-
-{
     "m_SGVersion": 2,
     "m_Type": "UnityEditor.Rendering.BuiltIn.ShaderGraph.BuiltInTarget",
     "m_ObjectId": "922bddcef3c34feda63a11e8ec990b2d",
@@ -1062,45 +1068,25 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.ClampNode",
-    "m_ObjectId": "95987098aa5c42128d151a72c77832e1",
-    "m_Group": {
-        "m_Id": "b868be364cd1434e8f2567968af6d2b0"
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "94284eba6fe945b7aab31688ec890e40",
+    "m_Id": 3,
+    "m_DisplayName": "Out",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
     },
-    "m_Name": "Clamp",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -236.00001525878907,
-            "y": 721.5999755859375,
-            "width": 208.0,
-            "height": 325.5999755859375
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "d742f08aebb24b9dba644a914780b836"
-        },
-        {
-            "m_Id": "8c8dc438a06547b3b48784ad3d833220"
-        },
-        {
-            "m_Id": "5fc356e9c4c54f408dd6ee25bde48b45"
-        },
-        {
-            "m_Id": "da29f9a8632f41c185f5a93e3167ebae"
-        }
-    ],
-    "synonyms": [
-        "limit"
-    ],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
     }
 }
 
@@ -1186,16 +1172,16 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "a46e45ed96b84c10802bf9ad0029c549",
-    "m_Title": "Circle cut out ",
-    "m_Content": "Here make it a circle and cut it out \n",
+    "m_Title": "Texture ",
+    "m_Content": "Here i add the texture by using a sample texture 2D node ",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -678.3999633789063,
-        "y": 1404.800048828125,
-        "width": 199.99996948242188,
-        "height": 156.7999267578125
+        "x": -683.2000122070313,
+        "y": 1350.4000244140625,
+        "width": 202.11599731445313,
+        "height": 162.4000244140625
     },
     "m_Group": {
         "m_Id": "cff90326a54c4460b615b2e4f6e8062c"
@@ -1263,10 +1249,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -600.0000610351563,
-            "y": 908.0000610351563,
-            "width": 134.39999389648438,
-            "height": 33.59991455078125
+            "x": -749.6000366210938,
+            "y": 936.800048828125,
+            "width": 134.39996337890626,
+            "height": 33.5999755859375
         }
     },
     "m_Slots": [
@@ -1293,8 +1279,8 @@
     "m_ObjectId": "b868be364cd1434e8f2567968af6d2b0",
     "m_Title": "Blinking",
     "m_Position": {
-        "x": -625.6000366210938,
-        "y": 661.5999755859375
+        "x": -985.60009765625,
+        "y": 680.0001220703125
     }
 }
 
@@ -1423,6 +1409,50 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.ClampNode",
+    "m_ObjectId": "cd373240c6af41a1a7a29ceb5891e090",
+    "m_Group": {
+        "m_Id": "b868be364cd1434e8f2567968af6d2b0"
+    },
+    "m_Name": "Clamp",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -413.6000061035156,
+            "y": 740.0000610351563,
+            "width": 208.0,
+            "height": 325.59991455078127
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "5c7cf2870999464db3e052bff26f500a"
+        },
+        {
+            "m_Id": "ed2ec5d5ed814f23bf2f9be16fbec541"
+        },
+        {
+            "m_Id": "73e13a21e34647e3b7e18b2f1a574ac9"
+        },
+        {
+            "m_Id": "94284eba6fe945b7aab31688ec890e40"
+        }
+    ],
+    "synonyms": [
+        "limit"
+    ],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.GroupData",
     "m_ObjectId": "cff90326a54c4460b615b2e4f6e8062c",
     "m_Title": "Cutting out",
@@ -1468,49 +1498,21 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
-    "m_ObjectId": "d742f08aebb24b9dba644a914780b836",
-    "m_Id": 0,
-    "m_DisplayName": "In",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "In",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "dbdcc03493e641ae8e4c3cf1b5214810",
+    "m_Title": "Invert Colors",
+    "m_Content": "Here we invert the texture Instead of cutting out the circle now we cut around the circle",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 23.200000762939454,
+        "y": 1341.5999755859375,
+        "width": 202.39999389648438,
+        "height": 162.4000244140625
     },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
-    "m_ObjectId": "da29f9a8632f41c185f5a93e3167ebae",
-    "m_Id": 3,
-    "m_DisplayName": "Out",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
+    "m_Group": {
+        "m_Id": "cff90326a54c4460b615b2e4f6e8062c"
     }
 }
 
@@ -1561,6 +1563,50 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "ed2ec5d5ed814f23bf2f9be16fbec541",
+    "m_Id": 1,
+    "m_DisplayName": "Min",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Min",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "f14e11a667454454b2217fff98b2e0c8",
+    "m_Title": "Clamp",
+    "m_Content": "Clamps the input between the min and max value ",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -188.8000030517578,
+        "y": 950.4000244140625,
+        "width": 201.60000610351563,
+        "height": 164.0
+    },
+    "m_Group": {
+        "m_Id": "b868be364cd1434e8f2567968af6d2b0"
+    }
 }
 
 {

@@ -53,7 +53,7 @@ public class UiManager : MonoBehaviour
 
     void Update()
     {
-        if (meterAnimator.GetFloat("Heat") == 90)
+        if (meterAnimator.GetFloat("Heat") > 90)
         {
             blinkingShader.SetFloat("_BlinkSpeed", 1.5f);
         }
