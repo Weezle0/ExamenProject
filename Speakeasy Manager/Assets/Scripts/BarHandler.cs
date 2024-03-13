@@ -26,6 +26,7 @@ public class BarHandler : MonoBehaviour
     private void Start()
     {
         economyManager = EconomyManager.instance;
+        WorkerManager.instance.bar = this;
         sellButton.onClick.AddListener(TriggerSell);
     }
 
