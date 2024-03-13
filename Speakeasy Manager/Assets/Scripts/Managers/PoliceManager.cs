@@ -118,8 +118,8 @@ public class PoliceManager : MonoBehaviour
     public void BribePolice()
     {
         // decrease heat after bribing police then make sure heat does not increase after bribing for X amount of time
-        heat = Mathf.Max(heat - 50/100, 0);
-        heatDisplayAnimator.SetFloat("Heat", heat * 100);
+        heat = Mathf.Max(heat - bribeAmount/100, 0);
+        heatDisplayAnimator.SetFloat("Heat", heat*100);
         economyManager.DecreaseMoney(bribeAmount);
         bribeAmount += bribeAmount * bribeMultiplier;
 
