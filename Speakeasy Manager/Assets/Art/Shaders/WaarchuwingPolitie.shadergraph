@@ -76,6 +76,9 @@
     "m_GroupDatas": [
         {
             "m_Id": "8c8709d7bbe6447b90ed3de202c8818b"
+        },
+        {
+            "m_Id": "048c44ba37fc4901a935fbc44b87a114"
         }
     ],
     "m_StickyNoteDatas": [
@@ -84,6 +87,9 @@
         },
         {
             "m_Id": "fc6f16fa03f04d50aa1b09daf7276eac"
+        },
+        {
+            "m_Id": "38d9397e1f3a40959ab549a5810aa019"
         }
     ],
     "m_Edges": [
@@ -272,6 +278,17 @@
         "y": 0.0
     },
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "048c44ba37fc4901a935fbc44b87a114",
+    "m_Title": "Flikkering with sine time",
+    "m_Position": {
+        "x": -1226.400146484375,
+        "y": 493.5999755859375
+    }
 }
 
 {
@@ -674,6 +691,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "38d9397e1f3a40959ab549a5810aa019",
+    "m_Title": "Subgraph",
+    "m_Content": "Door dubbel te klikken op de node opent de subgraph.",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1200.800048828125,
+        "y": 664.0,
+        "width": 200.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "048c44ba37fc4901a935fbc44b87a114"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "41bc2ce2c7d54cdcaab85d3313131ac7",
     "m_Id": 3,
@@ -718,9 +755,9 @@
     "m_ShaderOutputName": "BaseColor",
     "m_StageCapability": 2,
     "m_Value": {
-        "x": 0.9622641801834106,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0.0,
+        "y": 0.23509836196899415,
+        "z": 1.0
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -742,17 +779,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "55ec2ae8ba7245e4b470ddb7f37bd54a",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "8c8709d7bbe6447b90ed3de202c8818b"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1396.0,
-            "y": 91.19999694824219,
-            "width": 125.5999755859375,
-            "height": 76.79998779296875
+            "x": -1405.6002197265625,
+            "y": 91.19998931884766,
+            "width": 149.60009765625,
+            "height": 33.60002136230469
         }
     },
     "m_Slots": [
@@ -1458,17 +1495,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SubGraphNode",
     "m_ObjectId": "dc2ba1293a42412ab7acb31cc032ffe2",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "048c44ba37fc4901a935fbc44b87a114"
     },
     "m_Name": "Flikkering with sine time",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1046.4000244140625,
-            "y": 544.800048828125,
-            "width": 294.39990234375,
-            "height": 302.39996337890627
+            "x": -963.2000732421875,
+            "y": 553.5999755859375,
+            "width": 294.40008544921877,
+            "height": 302.4000244140625
         }
     },
     "m_Slots": [
