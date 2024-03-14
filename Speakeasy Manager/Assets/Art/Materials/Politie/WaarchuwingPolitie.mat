@@ -40,8 +40,9 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _Knipper_Snelheid_Fresnel: 4.36
+    - _Fresnel_power: 0.33
+    - _Knipper_Snelheid_Fresnel: 4.27
     m_Colors:
-    - _Albedo_Fresnel: {r: 0.39274454, g: 0, b: 1, a: 0}
-    - _Grote_Knippering_Fresnel: {r: 1, g: 5, b: 0, a: 0}
+    - _Albedo_Fresnel: {r: 0.034380913, g: 0, b: 1, a: 0}
+    - _Grote_Knippering_Fresnel: {r: 0, g: 0.07, b: 0, a: 0}
   m_BuildTextureStacks: []
