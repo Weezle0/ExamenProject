@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class MachineClass : MonoBehaviour
 {
@@ -38,10 +39,22 @@ public class MachineClass : MonoBehaviour
     {
         if (hasWorker && !isCrafting)
         {
-            isCrafting = true;
-            if (TryCraft() == false)
+            foreach (var item in machineInventory.items)
             {
-                currentWorker.GatherResources();
+                if (item.itemID == 1)
+                {
+                    if (item.amount >= 100)
+                    {
+                        machineInventory.TransferItems(currentWorker.workerInventory, machineInventory, 1, 100);
+                        currentWorker.StoreMoonshine();
+                        isCrafting = true;
+                        break;
+                    }
+                }
+            }
+            if(hasWorker && !isCrafting)
+            {
+                TryCraft();
             }
         }
     }
@@ -49,7 +62,7 @@ public class MachineClass : MonoBehaviour
     {
         // check if the items in the inventory are of the supply type
         List<ResourceData> requiredResources = resourceNeeded.ToList();
-
+        bool isfull = false;
         // check each item in the inventory to see if it contains enough supllies
         foreach (var item in machineInventory.items)
         {
@@ -67,10 +80,9 @@ public class MachineClass : MonoBehaviour
             StartCoroutine(CreateProduct());
             return true;
         }
-        else
-        {
-            return false;
-        }
+        WorkerManager.instance.bar.SupplyMachine(this);
+        
+        return false;
     }
     public void UpgradeMachine()
     {

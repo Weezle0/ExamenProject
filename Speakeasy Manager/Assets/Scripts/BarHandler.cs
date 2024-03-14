@@ -28,6 +28,7 @@ public class BarHandler : MonoBehaviour
         economyManager = EconomyManager.instance;
         WorkerManager.instance.bar = this;
         sellButton.onClick.AddListener(TriggerSell);
+        buyButton.onClick.AddListener(BuySupplies);
     }
 
     private void Update()
@@ -89,5 +90,25 @@ public class BarHandler : MonoBehaviour
     public void UpgradeBar()
     {
         gameObject.GetComponent<UpgradeHandler>().UpgradeConfirm();
+    }
+
+    public void SupplyMachine(MachineClass machineToSupply)
+    {
+        Debug.Log("Asking for supply");
+        if(currentWorker.IsWorking)
+        {
+            return;
+        }
+        currentWorker.IsWorking = true;
+        foreach (var item in barInventory.items)
+        {
+            if (item.itemID == 0)
+            {
+                currentWorker.workerInventory.TransferItems(currentWorker.workerInventory, barInventory, 0, 200);
+                currentWorker.ChangeDestination(machineToSupply.transform);
+                return;
+            }
+        }
+        
     }
 }

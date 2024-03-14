@@ -42,8 +42,8 @@ public class Inventory
     }
     public void TransferItems(Inventory recipient, Inventory sender, int itemType, int amount)
     {
-        recipient.RemoveItem(itemType, amount);
-        sender.AddItem(itemType, amount);
+        recipient.AddItem(itemType, amount);
+        sender.RemoveItem(itemType, amount);
     }
     public void RemoveItem(int id, int amount)
     {

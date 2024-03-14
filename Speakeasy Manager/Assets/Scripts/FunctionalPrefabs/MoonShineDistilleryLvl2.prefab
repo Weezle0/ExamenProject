@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8609497756183256855}
   - component: {fileID: 1372028452072502056}
   - component: {fileID: 461928697612773062}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MoonShineDistilleryLvl2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -130,9 +130,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8406694493714610378}
     m_Modifications:
+    - target: {fileID: 8200626758961590937, guid: 90fea442302ef8d4381182fc86a11c14, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8234366172038536408, guid: 90fea442302ef8d4381182fc86a11c14, type: 3}
       propertyPath: m_Name
       value: Moonshine Machine Level 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234366172038536408, guid: 90fea442302ef8d4381182fc86a11c14, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8722778460632237666, guid: 90fea442302ef8d4381182fc86a11c14, type: 3}
       propertyPath: m_LocalPosition.x

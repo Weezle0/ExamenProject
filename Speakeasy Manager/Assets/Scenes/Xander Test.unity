@@ -361,6 +361,12 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2120455976}
+    - target: {fileID: 2507717042607182108, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
+      propertyPath: m_Text
+      value: '1000
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 2523698155100098208, guid: 60ea3e30b67aa454ab4c3c31c7b51fd0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 662.42633
@@ -871,6 +877,30 @@ PrefabInstance:
       propertyPath: sellButton
       value: 
       objectReference: {fileID: 756958863}
+    - target: {fileID: 295098915792096950, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
+      propertyPath: moonshineValue
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 295098915792096950, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
+      propertyPath: barInventory.items.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 295098915792096950, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
+      propertyPath: barInventory.items.Array.data[0].amount
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 295098915792096950, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
+      propertyPath: barInventory.items.Array.data[0].itemID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 295098915792096950, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
+      propertyPath: barInventory.items.Array.data[1].amount
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 295098915792096950, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
+      propertyPath: barInventory.items.Array.data[1].itemID
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1216431141328833346, guid: ca33f8308a893fb4d8401749f8540f7f, type: 3}
       propertyPath: m_NavMeshData
       value: 
@@ -1328,7 +1358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1aea88ef9911d34fb98d07f94650e85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 50000
+  money: 1000
   moneyText: {fileID: 79432472}
   moneyChangeText: {fileID: 1077788969}
   moneyChangeAnimator: {fileID: 608082582}
@@ -1395,7 +1425,7 @@ PrefabInstance:
       objectReference: {fileID: 828452363}
     - target: {fileID: 7746295707420707875, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
       propertyPath: machineInventory.items.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7746295707420707875, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
       propertyPath: machineInventory.items.Array.data[0].amount
@@ -1459,25 +1489,9 @@ PrefabInstance:
       value: MoonShineDistilleryLvl1
       objectReference: {fileID: 0}
     - target: {fileID: 6090327228253285665, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
-      propertyPath: money
-      value: 
-      objectReference: {fileID: 8438084597909796396, guid: a9760a905a43c8041ae01e5eeb850e6c, type: 3}
-    - target: {fileID: 6090327228253285665, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
       propertyPath: upgradeButton
       value: 
       objectReference: {fileID: 828452363}
-    - target: {fileID: 7746295707420707875, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
-      propertyPath: suppliesNeeded
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7746295707420707875, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
-      propertyPath: machineInventory.items.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7746295707420707875, guid: ec26af9ab58bcfd4c8a6a36396cb4ea6, type: 3}
-      propertyPath: machineInventory.items.Array.data[0].amount
-      value: 250
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

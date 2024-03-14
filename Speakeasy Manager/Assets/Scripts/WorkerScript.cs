@@ -45,10 +45,11 @@ public class WorkerScript : MonoBehaviour
 
     public void StoreMoonshine()
     {
-
+        ChangeDestination(WorkerManager.instance.bar.transform);
     }
     private void OnTriggerEnter(Collider other)
     {
+
         // if worker has no current station and collides with a machines class make it the current station
         if (other.transform.GetComponent<MachineClass>() && currentStation == null)
         {
@@ -72,6 +73,14 @@ public class WorkerScript : MonoBehaviour
                 }
             }
         }
+        //if the worker is from the bar make it supply items
+        else if(other.transform.GetComponent<MachineClass>() != null && currentStation == WorkerManager.instance.bar.gameObject)
+        {
+            Debug.Log("Supplied items");
+            workerInventory.TransferItems(other.GetComponent<MachineClass>().machineInventory, workerInventory, 0, 200);
+            ChangeDestination(currentStation.transform);
+            isWorking = false;
+        }
         // if worker has no current station and collides with the bar make it the current station
         if (other.transform.GetComponent<BarHandler>() && currentStation == null)
         {
@@ -79,19 +88,10 @@ public class WorkerScript : MonoBehaviour
             currentStation = other.gameObject;
             other.GetComponent<BarHandler>().currentWorker = this;
         }
-        // if the worker already has a station assume it want to collect resources
-        else if (other.transform.GetComponent<BarHandler>() && currentStation.GetComponent<MachineClass>())
+        else if(other.transform.GetComponent<BarHandler>() && currentStation.GetComponent<MachineClass>())
         {
-            foreach (var item in other.GetComponent<BarHandler>().barInventory.items)
-            {
-                if (item.itemID == 0)
-                {
-                    workerInventory.TransferItems(workerInventory, other.GetComponent<BarHandler>().barInventory, 0, 200);
-                    ChangeDestination(currentStation.transform);
-                    return;
-                }
-            }
-
+            workerInventory.TransferItems(other.GetComponent<BarHandler>().barInventory, workerInventory, 1, 100);
+            ChangeDestination(currentStation.transform);
         }
     }
 }
