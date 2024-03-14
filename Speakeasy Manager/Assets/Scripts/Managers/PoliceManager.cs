@@ -74,6 +74,11 @@ public class PoliceManager : MonoBehaviour
         }
     }
 
+    public void IncreaseInfluence(int influece)
+    {
+        heatDisplayAnimator.SetFloat("Influence", influece);
+    }
+
     void CheckRaidChance()
     {
         // check raid chance based on the heat level
@@ -145,5 +150,12 @@ public class PoliceManager : MonoBehaviour
         Debug.Log("police stopped");
         policeAgents.Remove(policeToRemove.GetComponent<PoliceAgentScript>());
         Destroy(policeToRemove);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.GetComponent<MachineClass>())
+        {
+            other.GetComponent<UpgradeHandler>().PoliceReset();
+        }
     }
 }

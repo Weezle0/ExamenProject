@@ -93,6 +93,8 @@ public class UpgradeHandler : MonoBehaviour
             oldBar.currentWorker.SetStation(newBar);
             newBar.GetComponentInChildren<BarHandler>().currentWorker = oldBar.currentWorker;
 
+            PoliceManager.instance.IncreaseInfluence(currentStage * 50);
+
             Destroy(oldBar.transform.parent.gameObject);
         }
 
