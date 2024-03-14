@@ -297,7 +297,7 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "4f4cc096d26344fa9b40042b130943a7",
     "m_Title": "Remap",
-    "m_Content": "Geeft een waarde terug tussen de x- en y-componenten van input Out Min Max",
+    "m_Content": "Geeft een waarde terug tussen de x- en y-componenten van input Out Min Max.",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
